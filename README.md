@@ -1,7 +1,7 @@
 # ProjectSoftwareEngineering
 Repository για το project στο μάθημα Τεχνολογία Λογισμικού
 25/03/20
-1η online συνάντηση:
+2η online συνάντηση:
   Επιλογή θέματος
   Ανάθεση εργασιών
   Περιγραφή έργου
