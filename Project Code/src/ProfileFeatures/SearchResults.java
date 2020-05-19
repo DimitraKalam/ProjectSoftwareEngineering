@@ -1,18 +1,20 @@
 package ProfileFeatures;
-import User;
-public class SearchResults {
-    private ArrayList<User> users =new ArrayList<User>();
-    private String query;
-    private ArrayList<User> results =new ArrayList<User>();
 
-    public void searchUserByName(){
-        for (User element : users) {
-            if(query.equals(element.name))
+import java.util.ArrayList;
+
+public class SearchResults {
+    private ArrayList<Employee> users =new ArrayList<Employee>();
+    private String query;
+    private ArrayList<Employee> results =new ArrayList<Employee>();
+
+    public void searchEmployeeByName(){
+        for (Employee element : users) {
+            if(query.equals(element.getName()))
                 results.add(element);
 
         }
             }
-    public ArrayList<User> returnResults(){
+    public ArrayList<Employee> returnResults(){
         return results;}
 
     public ArrayList <String> alternativeSearch()

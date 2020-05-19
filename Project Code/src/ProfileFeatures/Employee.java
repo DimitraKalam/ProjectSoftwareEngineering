@@ -18,4 +18,8 @@ public boolean belongsToDepartment(department isthismyposition){
         return false;
 
 }
+
+    public String getName() {
+        return name;
+    }
 }
