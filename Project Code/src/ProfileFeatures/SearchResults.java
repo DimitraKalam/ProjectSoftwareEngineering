@@ -1,16 +1,24 @@
 package ProfileFeatures;
 import User;
 public class SearchResults {
-    private ArrayList<User> users =new ArrayList<User>;
+    private ArrayList<User> users =new ArrayList<User>();
     private String query;
-    private ArrayList<User> results =new ArrayList<User>;
+    private ArrayList<User> results =new ArrayList<User>();
 
-    public ArrayList<User> return_Results(){
+    public void searchUserByName(){
         for (User element : users) {
-            if( query== element.name)
+            if(query.equals(element.name))
                 results.add(element);
-            return results;
-        }
 
+        }
+            }
+    public ArrayList<User> returnResults(){
+        return results;}
+
+    public ArrayList <String> alternativeSearch()
+    {
+        //find similar searches
+        ArrayList<String> similarSearch =new ArrayList<String>();
+        return similarSearch;
     }
 }
