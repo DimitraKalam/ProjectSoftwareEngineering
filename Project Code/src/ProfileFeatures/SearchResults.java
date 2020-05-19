@@ -21,4 +21,5 @@ public class SearchResults {
         ArrayList<String> similarSearch =new ArrayList<String>();
         return similarSearch;
     }
+     public ChatFeature createChat(){return null;}
 }
