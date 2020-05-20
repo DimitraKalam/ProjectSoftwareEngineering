@@ -8,7 +8,7 @@ import javafx.scene.control.Button;
 
 import java.awt.event.ActionEvent;
 
-public class MainScreenController {
+public class SideBarController {
 
     @FXML // fx:id="SearchButton"
     private Button SearchButton; // Value injected by FXMLLoader
