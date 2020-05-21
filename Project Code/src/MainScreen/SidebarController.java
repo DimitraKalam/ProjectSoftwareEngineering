@@ -4,7 +4,7 @@ import com.gluonhq.charm.glisten.control.TextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 
 public class SidebarController {
 
