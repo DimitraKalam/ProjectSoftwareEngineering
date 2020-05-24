@@ -3,8 +3,8 @@ package ProfileFeatures;
 import java.util.*;
 
 public class ChatFeature {
-   private ArrayList <Message> messages = new ArrayList<Message>();
-   private List <User> users = new List<User>();
+   private ArrayList <ChatMessage> messages = new ArrayList<ChatMessage>();
+   private List <Employee> users = new ArrayList<Employee>();
 
    public ChatFeature returnChats(){ return null;}
 
