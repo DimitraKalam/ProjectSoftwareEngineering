@@ -1,5 +1,6 @@
 package MainScreen;
 
+import ProfileFeatures.Employee;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -18,10 +19,15 @@ public class MainScreenController {
 
     @FXML
     private Button ChatButton;
+    private Employee username;
+
 
     @FXML
     void goToScreen(ActionEvent event) {
 
     }
 
+    public void initData(Employee x) {
+        this.username=x;
+    }
 }

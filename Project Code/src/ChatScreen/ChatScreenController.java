@@ -1,5 +1,6 @@
 package ChatScreen;
 
+import ProfileFeatures.Employee;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -28,6 +29,8 @@ public class ChatScreenController {
 
         @FXML
         private Label User6chat;
+
+        private Employee username;
 
         @FXML
         void GoToScreen(ActionEvent event) {

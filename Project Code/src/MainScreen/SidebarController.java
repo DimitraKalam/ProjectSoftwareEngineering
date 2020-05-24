@@ -1,24 +1,26 @@
 package MainScreen;
 
+import ProfileFeatures.Employee;
 import com.gluonhq.charm.glisten.control.TextField;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 
 import javafx.event.ActionEvent;
 
+import com.gluonhq.charm.glisten.control.TextField;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class SidebarController {
-
     @FXML
-    private Button MyProfileButton;
-
-    @FXML
-    private Button RepositoryButton;
-
-    @FXML
-    private Button DepartmentButton;
-
-    @FXML
-    private Button SearchButton;
+    private BorderPane borderPane;
 
     @FXML
     private TextField SearchBar;
@@ -26,8 +28,19 @@ public class SidebarController {
     @FXML
     private Button BeginSearchButton;
 
-    public SidebarController() {
-    }
+    @FXML
+    private Button MainPageButton;
+
+    @FXML
+    private Button RepositoryButton;
+
+    @FXML
+    private Button MyProfileButton;
+
+    @FXML
+    private Button DepartmentButton;
+
+    private Employee username;
 
     @FXML
     void Search(ActionEvent event) {
@@ -35,14 +48,22 @@ public class SidebarController {
     }
 
     @FXML
-    void ShowSearch(ActionEvent event) {
-
-    }
-
-    @FXML
     void goToMainPage(ActionEvent event) {
+        Parent root = null;
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
+            root = (Parent) fxmlLoader.load();
 
+            MainScreenController mainScreenController = fxmlLoader.getController();
+            mainScreenController.initData(username);
+
+        } catch (IOException  ex){
+            Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        borderPane.setCenter(root);
     }
+
+
 
     @FXML
     void goToMyDepartment(ActionEvent event) {
@@ -57,5 +78,3 @@ public class SidebarController {
 }
 
 
-
-// SearchButton.setVisible(true);
