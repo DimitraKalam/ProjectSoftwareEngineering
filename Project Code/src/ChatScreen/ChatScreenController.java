@@ -42,6 +42,11 @@ public class ChatScreenController {
 
         }
 
-    }
+
+        public void initData(Employee x) {
+                this.username=x;
+        }
+
+}
 
 

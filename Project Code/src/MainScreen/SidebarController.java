@@ -20,8 +20,7 @@ import java.util.logging.Logger;
 
 public class SidebarController {
     @FXML
-    private BorderPane borderPane;
-
+    private BorderPane borderPanee;
     @FXML
     private TextField SearchBar;
 
@@ -53,14 +52,14 @@ public class SidebarController {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
             root = (Parent) fxmlLoader.load();
+           MainScreenController mainScreenController = fxmlLoader.getController();
+           // editAccountController.initData(username);
 
-            MainScreenController mainScreenController = fxmlLoader.getController();
-            mainScreenController.initData(username);
-
-        } catch (IOException  ex){
+        } catch (IOException ex) {
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        borderPane.setCenter(root);
+
+        borderPanee.setCenter(root);
     }
 
 
