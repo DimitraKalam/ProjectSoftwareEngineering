@@ -6,7 +6,7 @@
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teaL;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.MainScreen.ChatScreen.ChatScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teaL;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.ChatScreen.ChatScreenController">
    <children>
       <Button fx:id="NewGroupChatButton" layoutX="431.0" layoutY="343.0" mnemonicParsing="false" onAction="#GoToScreen" text="Create New Group Chat" />
       <CardPane layoutX="14.0" layoutY="14.0" prefHeight="303.0" prefWidth="547.0" style="-fx-background-color: #ffa500;">

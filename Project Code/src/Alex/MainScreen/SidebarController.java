@@ -47,7 +47,7 @@ public class SidebarController {
     void goToMainPage(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen/MainScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
             root = (Parent) fxmlLoader.load();
            MainScreenController mainScreenController = fxmlLoader.getController();
            // editAccountController.initData(username);

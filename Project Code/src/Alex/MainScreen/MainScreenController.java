@@ -34,7 +34,7 @@ public class MainScreenController {
     void goToChatScreen(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Alex.MainScreen.ChatScreen/Alex.MainScreen.ChatScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatScreen/ChatScreen.fxml"));
             root = (Parent) fxmlLoader.load();
 
             //ChatScreenController chatScreenController = fxmlLoader.getController();
