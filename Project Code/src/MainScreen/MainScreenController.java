@@ -29,7 +29,7 @@ public class MainScreenController {
     private Button ChatButton;
     private Employee username;
     @FXML
-    private BorderPane inside;
+    private BorderPane BorderPaneMainScreen;
 
     @FXML
     void goToChatScreen(ActionEvent event) {
@@ -44,7 +44,7 @@ public class MainScreenController {
         } catch (IOException ex){
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        inside.setCenter(root);
+        BorderPaneMainScreen.setCenter(root);
     }
 
     /*public void initData(Employee x) {
