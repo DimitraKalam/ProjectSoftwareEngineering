@@ -1,4 +1,4 @@
-package ITDepartmentEmployeeFeatures;
+package Dimitris.ITDepartmentEmployeeFeatures;
 
 public class ComputerResourcesUsage extends BaseUsageInfo
 {

@@ -1,4 +1,4 @@
-package ITDepartmentEmployeeFeatures;
+package Dimitris.ITDepartmentEmployeeFeatures;
 
 class BaseUsageInfo
 {

@@ -1,6 +1,4 @@
-package ITDepartmentEmployeeFeatures;
-
-import java.util.Vector;
+package Dimitris.ITDepartmentEmployeeFeatures;
 
 public class ComputerSoftwareUsage extends BaseUsageInfo
 {

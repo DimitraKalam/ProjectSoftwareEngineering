@@ -1,4 +1,4 @@
-package ToDoListFeatures;
+package Dimitris.ToDoListFeatures;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package AnnouncementFeatures;
+package Dimitris.AnnouncementFeatures;
 
 public class Announcement
 {
