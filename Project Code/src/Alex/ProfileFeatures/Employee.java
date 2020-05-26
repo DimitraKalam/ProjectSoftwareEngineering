@@ -1,9 +1,14 @@
 package Alex.ProfileFeatures;
 
 public class Employee {
-    private String name;
-    private String surname;
-    private enum department {
+    private String  fullname;
+
+    public department getPosition() {
+        return position;
+    }
+
+
+    public enum department {
         none,
         HR,
         Logistics,
@@ -12,14 +17,20 @@ public class Employee {
     }
     private department position;
 
-public boolean belongsToDepartment(department isthismyposition){
+    public boolean belongsToDepartment(department isthismyposition){
         if(this.position==isthismyposition)
         { return true;}
         return false;
 
 }
-
+    public void setPosition(department x){
+        this.position=x;
+    }
     public String getName() {
-        return name;
+        return fullname;
+    }
+
+    public void setName(String name) {
+        this.fullname=name;
     }
 }

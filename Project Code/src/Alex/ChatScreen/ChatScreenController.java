@@ -1,6 +1,7 @@
 package Alex.ChatScreen;
 
 import Alex.ProfileFeatures.Employee;
+import Alex.ProfileFeatures.Profile;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -30,7 +31,16 @@ public class ChatScreenController {
         @FXML
         private Label User6chat;
 
-        private Employee username;
+        private static Employee username;
+        private static Profile profile;
+
+        public static void initEmployee(Employee x) {
+                username=x;
+        }
+
+        public static void initProfile(Profile y) {
+                profile=y;
+        }
 
         @FXML
         void GoToScreen(ActionEvent event) {
@@ -43,9 +53,7 @@ public class ChatScreenController {
         }
 
 
-        public void initData(Employee x) {
-                this.username=x;
-        }
+
 
 }
 

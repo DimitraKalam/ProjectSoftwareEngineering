@@ -1,6 +1,9 @@
 package Alex.MainScreen;
 
+import Alex.ChatScreen.ChatScreenController;
 import Alex.ProfileFeatures.Employee;
+import Alex.ProfileFeatures.Profile;
+import Alex.ProfileScreen.ProfileScreenController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -26,9 +29,20 @@ public class MainScreenController {
 
     @FXML
     private Button ChatButton;
-    private Employee username;
+
     @FXML
     private BorderPane BorderPaneMainScreen;
+
+    private static Employee username;
+    private static Profile profile;
+
+    public static void initEmployee(Employee x) {
+        username=x;
+    }
+
+    public static void initProfile(Profile y) {
+        profile=y;
+    }
 
     @FXML
     void goToChatScreen(ActionEvent event) {
@@ -37,8 +51,9 @@ public class MainScreenController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatScreen/ChatScreen.fxml"));
             root = (Parent) fxmlLoader.load();
 
-            //ChatScreenController chatScreenController = fxmlLoader.getController();
-            //chatScreenController.initData(username);
+            ChatScreenController chatScreenController = fxmlLoader.getController();
+            chatScreenController.initEmployee(username);
+            chatScreenController.initProfile(profile);
 
         } catch (IOException ex){
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
