@@ -1,7 +1,10 @@
 package Alex.ProfileFeatures;
 
+import javafx.scene.image.Image;
+
 import javax.swing.*;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
@@ -10,11 +13,12 @@ import java.util.Locale;
 
 public class Profile {
     private String fullname;
-    private Employee.department position;
+    private Employee.department dpt;
+    private String position;
     private long salary;
     //private ArrayList< MonthlyReview> monthlyReviews = new ArrayList< MonthlyReview>();
-    private Calendar startDate;
-    private ImageIcon photo = new ImageIcon();
+    private LocalDate startDate;
+    private Image photo ;
     private Employee user;
     private String contactInfo;
 
@@ -25,15 +29,15 @@ public class Profile {
     public void setUser(Employee x) {
         this.user=x;
         this.fullname=x.getName();
-        this.position=x.getPosition();
+        this.dpt=x.getDepartment();
 
     }
 
-    public void setDate(Calendar y) {
-        this.startDate=y;
+    public void setDate(LocalDate date) {
+       startDate= date;
     }
 
-    public void setSalary(int i) {
+    public void setSalary (long i) {
         this.salary=i;
     }
 
@@ -45,19 +49,38 @@ public class Profile {
         return contactInfo;
     }
 
-    public Employee.department getPosition() {
+    public Employee.department getDepartment() {
+        return dpt;
+    }
+
+
+
+    public LocalDate getDate() {
+       return startDate;
+
+    }
+
+    public String getPosition() {
         return position;
     }
 
-    /*public CharSequence getDate() {
-        String strdate = null;
+    public void setPosition(String position) {
+        this.position = position;
+    }
 
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+    public void setContactInfo(String contactInfo) {
+        this.contactInfo = contactInfo;
+    }
 
-        if (this.startDate != null) {
-            strdate = sdf.format(startDate.getTime());
+    public long getSalary() {
+        return salary;
+    }
 
-        }
-        return strdate;
-    }*/
+    public Image getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(Image photo) {
+        this.photo = photo;
+    }
 }

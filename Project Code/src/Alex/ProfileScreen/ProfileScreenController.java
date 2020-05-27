@@ -13,6 +13,9 @@ import javafx.scene.layout.AnchorPane;
 
 import java.time.LocalDate;
 
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.valueOf;
+
 public class ProfileScreenController {
 
     @FXML
@@ -22,22 +25,24 @@ public class ProfileScreenController {
     private ImageView ProfilePicture;
 
     @FXML
-    private static TextField NameTextField;
+    private  TextField NameTextField;
 
     @FXML
-    private static TextArea ContactInfoTextArea;
+    private  TextArea ContactInfoTextArea;
 
     @FXML
-    private static TextField PositionTextField;
+    private  TextField PositionTextField;
 
     @FXML
     private Button EditProfileButton;
 
     @FXML
-    private static DatePicker DateStartedPicker;
+    private  DatePicker DateStartedPicker;
 
     @FXML
     private Button SaveProfileButton;
+    @FXML
+    private TextField SalaryTextField;
 
     private static Employee username;
     private static Profile profile;
@@ -50,13 +55,7 @@ public class ProfileScreenController {
         profile=y;
     }
 
-    public static void setData(Profile profile) {
-        NameTextField.setText(profile.getName());
-        ContactInfoTextArea.setText(profile.getContact());
-        PositionTextField.setText(profile.getPosition().name());
-        //LocalDate localDate = LocalDate.parse(profile.getDate());
-       // DateStartedPicker.setValue(localDate);
-    }
+
 
     @FXML
     void EditProfile(ActionEvent event) {
@@ -64,6 +63,7 @@ public class ProfileScreenController {
         NameTextField.setEditable(true);
         ContactInfoTextArea.setEditable(true);
         PositionTextField.setEditable(true);
+        SalaryTextField.setEditable(true);
         DateStartedPicker.setEditable(true);
         SaveProfileButton.setDisable(false);
         EditProfileButton.setDisable(true);
@@ -75,11 +75,30 @@ public class ProfileScreenController {
         NameTextField.setEditable(false);
         ContactInfoTextArea.setEditable(false);
         PositionTextField.setEditable(false);
+        SalaryTextField.setEditable(false);
         DateStartedPicker.setEditable(false);
         SaveProfileButton.setDisable(true);
         //SaveProfileButton.setVisible(false);
         EditProfileButton.setDisable(false);
+        username.setName(NameTextField.getText());
+        profile.setUser(username);
+        profile.setDate(DateStartedPicker.getValue());
+        profile.setPosition(PositionTextField.getText());
+        profile.setContactInfo(ContactInfoTextArea.getText());
+        profile.setSalary(parseInt(SalaryTextField.getText()));
+
     }
 
 
+    public void setVariables(Employee x, Profile y) {
+        profile=y;
+        username=x;
+        NameTextField.setText(profile.getName());
+        ContactInfoTextArea.setText(profile.getContact());
+        PositionTextField.setText(profile.getPosition());
+        SalaryTextField.setText(String.valueOf(profile.getSalary()));
+        DateStartedPicker.setValue(profile.getDate());
+        ProfilePicture.setImage(profile.getPhoto());
+
+    }
 }

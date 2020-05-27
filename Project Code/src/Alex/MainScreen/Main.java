@@ -6,8 +6,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Side;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import javax.swing.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -29,51 +34,28 @@ public class Main extends Application {
         //Logistics Employee initialization
         Employee logistics =new Employee();
         logistics.setName("Alex Jones");
-        logistics.setPosition(Employee.department.Logistics);
+        logistics.setDepartment(Employee.department.Logistics);
+
        return logistics;
     }
-    public static Profile logisticsProfile(Employee logistics){
+    public Profile logisticsProfile(Employee logistics){
         Profile logisticsProfile= new Profile();
         logisticsProfile.setUser(logistics);
-        Calendar start = new Calendar() {
-            protected void computeTime() {
-
-            }
-
-            protected void computeFields() {
-
-            }
-
-            public void add(int field, int amount) {
-
-            }
-
-            public void roll(int field, boolean up) {
-
-            }
-
-            public int getMinimum(int field) {
-                return 0;
-            }
-
-            public int getMaximum(int field) {
-                return 0;
-            }
-
-            public int getGreatestMinimum(int field) {
-                return 0;
-            }
-
-            public int getLeastMaximum(int field) {
-                return 0;
-            }
-        };
-        start.set(2012,7,26);
-
-        logisticsProfile.setDate(start);
+       // LocalDate date= LocalDate.parse("Mon Feb 05 2017");
+        //logisticsProfile.setDate(date);
         logisticsProfile.setSalary(2000);
+        logisticsProfile.setPosition("Logistics Intern");
+        Image icon = null;
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image2.jpg"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        logisticsProfile.setPhoto(image);
         return logisticsProfile;
     }
+
 
     public static void main(String[] args) {
         launch(args);

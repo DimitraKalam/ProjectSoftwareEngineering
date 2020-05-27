@@ -52,8 +52,8 @@ public class MainScreenController {
             root = (Parent) fxmlLoader.load();
 
             ChatScreenController chatScreenController = fxmlLoader.getController();
-            chatScreenController.initEmployee(username);
-            chatScreenController.initProfile(profile);
+            chatScreenController.initEmployee(username, profile);
+
 
         } catch (IOException ex){
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);

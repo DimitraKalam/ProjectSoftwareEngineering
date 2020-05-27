@@ -1,5 +1,7 @@
 package Alex.LogisticsDepartmentScreens;
 
+import Alex.ProfileFeatures.Employee;
+import Alex.ProfileFeatures.Profile;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -26,6 +28,10 @@ public class EconomicsScreenController {
     @FXML
     private TableColumn<?, ?> CounterpartyColumn;
 
+    private static Employee username;
+    private static Profile profile;
+
+
     @FXML
     void MakeEditable(ActionEvent event) {
 
@@ -49,6 +55,10 @@ public class EconomicsScreenController {
     @FXML
     void sortAlphabetically(ActionEvent event) {
 
+    }
+    public static void initEmployee(Employee x, Profile y) {
+        profile=y;
+        username=x;
     }
 
 }

@@ -1,4 +1,6 @@
 package Alex.LogisticsDepartmentScreens;
+import Alex.ProfileFeatures.Employee;
+import Alex.ProfileFeatures.Profile;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -22,6 +24,9 @@ public class PaymentsScreenController {
         @FXML
         private TableColumn<?, ?> CounterpartyColumn;
 
+        private static Employee username;
+        private static Profile profile;
+
         @FXML
         void MakeEditable(ActionEvent event) {
 
@@ -42,6 +47,10 @@ public class PaymentsScreenController {
 
         }
 
+    public void initEmployee(Employee x, Profile y) {
+            profile=y;
+            username=x;
     }
+}
 
 

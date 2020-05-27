@@ -34,13 +34,11 @@ public class ChatScreenController {
         private static Employee username;
         private static Profile profile;
 
-        public static void initEmployee(Employee x) {
+        public static void initEmployee(Employee x, Profile y) {
+                profile=y;
                 username=x;
         }
 
-        public static void initProfile(Profile y) {
-                profile=y;
-        }
 
         @FXML
         void GoToScreen(ActionEvent event) {
