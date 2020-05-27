@@ -5,10 +5,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: TEAL;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.LogisticsDepartmentScreens.EconomicsScreenController">
    <children>
-      <Button fx:id="ProfitButton" layoutX="470.0" layoutY="305.0" mnemonicParsing="false" onAction="#showProfit" style="-fx-background-color: LIME;" text="Show Profit" />
+      <Button fx:id="ProfitButton" layoutX="470.0" layoutY="305.0" mnemonicParsing="false" onAction="#showProfit" style="-fx-background-color: purple;" text="Show Profit" />
       <TableView fx:id="EconomicsTable" layoutX="39.0" layoutY="45.0" onSort="#sortAlphabetically" prefHeight="200.0" prefWidth="495.0" style="-fx-background-color: ORANGE;">
          <columns>
             <TableColumn fx:id="NameColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="100.0" text="Name " />
