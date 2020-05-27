@@ -17,7 +17,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Main extends Application {
-
+//Omiros
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Sidebar.fxml"));
