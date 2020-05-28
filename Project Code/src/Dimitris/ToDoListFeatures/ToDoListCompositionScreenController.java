@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
-class ToDoListCompositionScreenController {
+public class ToDoListCompositionScreenController {
 
     @FXML // fx:id="EntriesTable"
     private TableView<?> EntriesTable; // Value injected by FXMLLoader
@@ -19,30 +19,21 @@ class ToDoListCompositionScreenController {
 
     @FXML
     void Cancel(MouseEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("Back");
 
+        alert.showAndWait();
     }
 
-    private void handleSButtonAction()
+    @FXML
+    void ToDoListSaveChanges(MouseEvent event)
     {
-        SaveChangesButton.setOnMouseClicked(event -> {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Information Dialog");
-            alert.setHeaderText(null);
-            alert.setContentText("Changes Saved");
-
-            alert.showAndWait();
-        });
-    }
-
-    private void handleCButtonAction()
-    {
-        CancelButton.setOnMouseClicked(event -> {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Information Dialog");
-            alert.setHeaderText(null);
-            alert.setContentText("Back");
-
-            alert.showAndWait();
-        });
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("Changes Saved");
+        alert.showAndWait();
     }
 }
