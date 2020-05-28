@@ -3,6 +3,8 @@ package Alex.ProfileFeatures;
 public class Employee {
     private String  fullname;
 
+
+
     public department getDepartment() {
         return dpt;
     }
@@ -17,6 +19,10 @@ public class Employee {
     }
     private department dpt;
 
+    public Employee(String x, department y) {
+        this.fullname=x;
+        this.dpt=y;
+    }
     public boolean belongsToDepartment(department isthismyposition){
         if(this.dpt==isthismyposition)
         { return true;}

@@ -11,10 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-import java.time.LocalDate;
-
 import static java.lang.Integer.parseInt;
-import static java.lang.Integer.valueOf;
 
 public class ProfileScreenController {
 
@@ -44,15 +41,16 @@ public class ProfileScreenController {
     @FXML
     private TextField SalaryTextField;
 
-    private static Employee username;
-    private static Profile profile;
+    private static Employee myUsername,username;
+    private static Profile myProfile,profile;
 
-    public static void initEmployee(Employee x) {
-        username=x;
-    }
+    public void initEmployeeFromMyProfile(Employee x, Profile y) {
 
-    public static void initProfile(Profile y) {
-        profile=y;
+        myUsername=x;
+        username=myUsername;
+        myProfile=y;
+        profile=myProfile;
+        setVariables(username,profile);
     }
 
 
@@ -90,15 +88,23 @@ public class ProfileScreenController {
     }
 
 
-    public void setVariables(Employee x, Profile y) {
-        profile=y;
-        username=x;
-        NameTextField.setText(profile.getName());
-        ContactInfoTextArea.setText(profile.getContact());
-        PositionTextField.setText(profile.getPosition());
-        SalaryTextField.setText(String.valueOf(profile.getSalary()));
-        DateStartedPicker.setValue(profile.getDate());
-        ProfilePicture.setImage(profile.getPhoto());
+    public  void setVariables(Employee x, Profile y) {
+
+        NameTextField.setText(y.getName());
+        ContactInfoTextArea.setText(y.getContact());
+        PositionTextField.setText(y.getPosition());
+        SalaryTextField.setText(String.valueOf(y.getSalary()));
+        DateStartedPicker.setValue(y.getDate());
+        ProfilePicture.setImage(y.getPhoto());
+
+    }
+
+    public void initEmployeeFromProfile(Employee username1, Profile profile1, Employee dummy1, Profile dummyProfile1) {
+    myUsername=username1;
+    myProfile=profile1;
+    username=dummy1;
+    profile=dummyProfile1;
+    setVariables(username,profile);
 
     }
 }
