@@ -4,15 +4,12 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dimitris.ToDoListFeatures.ToDoListPreviewScreenController">
    <children>
-      <AnchorPane layoutX="188.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <TableView prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                <TableColumn prefWidth="199.0" text="ToDoLists" />
-              </columns>
-            </TableView>
-         </children></AnchorPane>
+      <TableView id="EntriesTable" fx:id="EntriesTable" layoutX="103.0" layoutY="58.0" prefHeight="284.0" prefWidth="435.0">
+         <columns>
+            <TableColumn prefWidth="434.0" text="ToDoLists" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>
