@@ -8,10 +8,6 @@ import javafx.stage.Stage;
 
 public class MainTo extends Application
 {
-    public static void main(String[] args)
-    {
-        Application.launch(args);
-    }
 
     @Override
     public void start(Stage primaryStage) throws Exception
@@ -20,5 +16,9 @@ public class MainTo extends Application
         primaryStage.setTitle("CompositionScreen");
         primaryStage.setScene(new Scene(root, 850, 600));
         primaryStage.show();
+    }
+    public static void main(String[] args)
+    {
+        Application.launch(args);
     }
 }
