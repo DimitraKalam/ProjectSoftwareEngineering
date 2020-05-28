@@ -5,20 +5,16 @@ import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;
 import com.gluonhq.charm.glisten.control.TextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-
-import javafx.event.ActionEvent;
-
 import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import static Alex.ProfileScreen.ProfileScreenController.*;
 
 public class SidebarController {
     @FXML
