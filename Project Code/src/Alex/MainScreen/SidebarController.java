@@ -149,7 +149,8 @@ public class SidebarController {
 
 
 
-        }}
+        }
+    }
 }
 
 
