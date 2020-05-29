@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.LogisticsDepartmentScreens.PaymentsScreenController">
+   <children>
+      <TableView fx:id="EconomicsTable" layoutX="374.0" layoutY="61.0" onSort="#sortAlphabetically" prefHeight="220.0" prefWidth="195.0" style="-fx-background-color: orange;">
+        <columns>
+          <TableColumn fx:id="NameColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="101.0" text="Όνομα Χρήστη" />
+            <TableColumn fx:id="CounterpartyColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="93.0" text="Τμήμα" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="67.0" layoutY="137.0" prefHeight="200.0" prefWidth="253.0" text="Περιεχόμενο Ανακοίνωσης" />
+   </children>
+</AnchorPane>
