@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPanee" prefHeight="525.0" prefWidth="672.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.MainScreen.SidebarController">
+<BorderPane fx:id="borderPanee" prefHeight="525.0" prefWidth="672.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScreen.SidebarController">
    <left>
       <VBox alignment="TOP_RIGHT" prefHeight="283.0" prefWidth="114.0" BorderPane.alignment="CENTER">
          <children>

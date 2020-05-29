@@ -1,9 +1,8 @@
-package Alex.MainScreen;
+package MainScreen;
 
 import Alex.ChatScreen.ChatScreenController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
-import Alex.ProfileScreen.ProfileScreenController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

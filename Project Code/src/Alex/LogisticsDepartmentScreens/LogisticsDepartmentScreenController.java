@@ -1,8 +1,5 @@
 package Alex.LogisticsDepartmentScreens;
-import Alex.LogisticsEmployeeFeatures.Economics;
-import Alex.LogisticsEmployeeFeatures.Payments;
-import Alex.MainScreen.MainScreenController;
-import Alex.MainScreen.SidebarController;
+import MainScreen.SidebarController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import javafx.event.ActionEvent;
