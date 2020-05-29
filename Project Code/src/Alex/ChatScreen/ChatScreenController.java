@@ -60,10 +60,14 @@ public class ChatScreenController {
         public void initEmployee(Employee x, Profile y) {
                 profile=y;
                 username=x;
-               Profile dummyprofile1=createDummyProfiles("Dummy User 1","Project Code/src/Alex/ChatScreen/image8.jpg");
-              //
-
-               User1chat.setText(dummyprofile1.getName());
+                Profile dummyprofile1=createDummyProfiles("Dummy User 1","Project Code/src/Alex/ChatScreen/image8.jpg");
+                Profile dummyprofile2=createDummyProfiles("Dummy User 2","Project Code/src/Alex/ChatScreen/image9.jpg");
+                Profile dummyprofile3=createDummyProfiles("Dummy User 3","Project Code/src/Alex/ChatScreen/image10.jpg");
+                Profile dummyprofile4=createDummyProfiles("Dummy User 4","Project Code/src/Alex/ChatScreen/image11.jpg");
+                Profile dummyprofile5=createDummyProfiles("Dummy User 5","Project Code/src/Alex/ChatScreen/image12.jpg");
+                Profile dummyprofile6=createDummyProfiles("Dummy User 6","Project Code/src/Alex/ChatScreen/image13.jpg");
+                Avatar1.setImage(dummyprofile1.getPhoto());
+                User1chat.setText(dummyprofile1.getName());
         }
 
 
@@ -89,7 +93,7 @@ public class ChatScreenController {
                         e.printStackTrace();
                 }
                 dummyProfile1.setPhoto(image);
-                Avatar1.setImage(image);
+
                 return dummyProfile1;
 
         }
