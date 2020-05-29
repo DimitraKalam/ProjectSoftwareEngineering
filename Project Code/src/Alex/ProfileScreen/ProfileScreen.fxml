@@ -17,10 +17,10 @@
          </image>
       </ImageView>
       <TextField fx:id="NameTextField" editable="false" layoutX="268.0" layoutY="27.0" prefHeight="25.0" prefWidth="257.0" promptText="Your Name Goes Here" />
-      <TextArea fx:id="ContactInfoTextArea" editable="false" layoutX="315.0" layoutY="124.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="ContactInfoTextArea" editable="false" layoutX="287.0" layoutY="132.0" prefHeight="200.0" prefWidth="267.0" />
       <Label layoutX="212.0" layoutY="70.0" prefHeight="17.0" prefWidth="56.0" text="Position" />
       <TextField fx:id="PositionTextField" editable="false" layoutX="287.0" layoutY="66.0" prefHeight="25.0" prefWidth="257.0" />
-      <Label layoutX="190.0" layoutY="134.0" prefHeight="17.0" prefWidth="110.0" text="Contact Information" />
+      <Label layoutX="211.0" layoutY="132.0" prefHeight="42.0" prefWidth="76.0" text="Contact &#10;Information" />
       <Button fx:id="EditProfileButton" layoutX="80.0" layoutY="324.0" mnemonicParsing="false" onAction="#EditProfile" text="Edit " />
       <HBox layoutX="297.0" layoutY="337.0" prefHeight="25.0" prefWidth="200.0">
          <children>

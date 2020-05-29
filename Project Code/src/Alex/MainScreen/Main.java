@@ -3,21 +3,18 @@ import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Side;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import javax.swing.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
+
+import static Alex.ProfileFeatures.Employee.department.Logistics;
 
 public class Main extends Application {
-//Omiros
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Sidebar.fxml"));
@@ -32,9 +29,7 @@ public class Main extends Application {
     }
     public static Employee employeeLogistics(){
         //Logistics Employee initialization
-        Employee logistics =new Employee();
-        logistics.setName("Alex Jones");
-        logistics.setDepartment(Employee.department.Logistics);
+        Employee logistics =new Employee("Alex Jones", Logistics);
 
        return logistics;
     }
@@ -60,4 +55,3 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
 }}
-//Αλεξ
