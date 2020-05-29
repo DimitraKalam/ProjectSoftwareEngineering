@@ -13,6 +13,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+import Alex.ProfileFeatures.Employee.department.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -45,7 +46,7 @@ public class LoginController {
     @FXML
     private ComboBox<String> comboBox;
 
-}
+
     @FXML
     void exit(ActionEvent event) {
 
@@ -57,7 +58,7 @@ public class LoginController {
         Parent root1 = (Parent) fxmlLoader.load();
 
         MainScreenController mainScreenController = fxmlLoader.getController();
-        MainScreenController.initEmployee(Employee(username.getText(),));
+        MainScreenController.initEmployee(Employee(username.getText(), ));
 
         Stage stage = new Stage();
         stage.setTitle("Recruiter");
