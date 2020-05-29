@@ -6,6 +6,12 @@ public class ToDoList
 {
     Vector<ToDoListEntry> EntryVector;
 
+    String Name;
+
+    public ToDoList(String name) {
+        Name = name;
+    }
+
     public ToDoList()
     {
         EntryVector = new Vector<>();

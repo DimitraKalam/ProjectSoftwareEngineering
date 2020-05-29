@@ -12,7 +12,7 @@ public class MainTo extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("ToDoListDeleteScreen.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ToDoListCompositionScreen.fxml"));
         primaryStage.setTitle("CompositionScreen");
         primaryStage.setScene(new Scene(root, 850, 600));
         primaryStage.show();
