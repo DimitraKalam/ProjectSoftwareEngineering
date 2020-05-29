@@ -66,7 +66,7 @@ public class SidebarController {
         dummyProfile.setPosition("Cleaning Staff");
         dummyProfile.setSalary(2000);
         dummyProfile.setContactInfo("Πρόκειται για dummy προφίλ \nπου δημιουργείται με όνομα το query \nτης αναζήτησης για τις ανάγκες της εργασίας \nκαι της επίδειξης της βασικής λειτουργικότητας.");
-        Image icon = null;
+
         Image image = null;
         try {
             image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image7.jpg"));
@@ -80,7 +80,7 @@ public class SidebarController {
             root = (Parent) fxmlLoader.load();
             SearchResultsController searchResultsController = fxmlLoader.getController();
             searchResultsController.initSearchResults(username,profile,dummy,dummyProfile);
-           //SearchResultsController.showResults();
+
 
         } catch (IOException ex) {
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
@@ -149,7 +149,8 @@ public class SidebarController {
 
 
 
-        }}
+        }
+    }
 }
 
 

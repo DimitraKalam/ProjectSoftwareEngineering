@@ -4,19 +4,39 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teaL;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.ChatScreen.ChatScreenController">
    <children>
       <Button fx:id="NewGroupChatButton" layoutX="431.0" layoutY="343.0" mnemonicParsing="false" onAction="#GoToScreen" text="Create New Group Chat" />
       <CardPane layoutX="14.0" layoutY="14.0" prefHeight="303.0" prefWidth="547.0" style="-fx-background-color: #ffa500;">
-          <Label fx:id="User1chat" onMouseClicked="#goToChat" prefHeight="36.0" prefWidth="522.0" style="-fx-background-color: orange;" text="User 1" />
-          <Label fx:id="User2chat" disable="true" onMouseClicked="#goToChat" prefHeight="35.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 2" />
-          <Label fx:id="User3chat" disable="true" onMouseClicked="#goToChat" prefHeight="38.0" prefWidth="521.0" style="-fx-background-color: orange;" text="User 3" />
-         <Label fx:id="User4chat" disable="true" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 4" />
-         <Label fx:id="User5chat" disable="true" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="523.0" style="-fx-background-color: orange;" text="User 5" />
-         <Label fx:id="User6chat" disable="true" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 6" />
+          <Label fx:id="User1chat" onMouseClicked="#goToChat" prefHeight="36.0" prefWidth="522.0" style="-fx-background-color: orange;" text="User 1">
+            <graphic>
+               <ImageView fx:id="Avatar1" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Label>
+          <Label fx:id="User2chat" onMouseClicked="#goToChat" prefHeight="35.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 2">
+            <graphic>
+               <ImageView fx:id="Avatar2" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Label>
+          <Label fx:id="User3chat" onMouseClicked="#goToChat" prefHeight="38.0" prefWidth="521.0" style="-fx-background-color: orange;" text="User 3">
+            <graphic>
+               <ImageView fx:id="Avatar3" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Label>
+         <Label fx:id="User4chat" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 4">
+            <graphic>
+               <ImageView fx:id="Avatar4" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Label>
+         <Label fx:id="User5chat" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="523.0" style="-fx-background-color: orange;" text="User 5">
+            <graphic>
+               <ImageView fx:id="Avatar5" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Label>
+         <Label fx:id="User6chat" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 6">
+            <graphic>
+               <ImageView fx:id="Avatar6" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Label>
          <ScrollBar orientation="VERTICAL" prefHeight="342.0" prefWidth="14.0" />
+         <ImageView fx:id="Avatar12" fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
       </CardPane>
    </children>
 </AnchorPane>

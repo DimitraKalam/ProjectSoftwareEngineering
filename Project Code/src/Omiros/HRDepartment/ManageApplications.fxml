@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox prefHeight="218.0" prefWidth="600.0" spacing="20.0">
          <children>
@@ -29,26 +23,32 @@
                <children>
                   <TextField alignment="CENTER" editable="false" promptText="First Name" />
                   <TextField alignment="CENTER" editable="false" promptText="Last Name" />
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                      <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" text="Skills" textAlignment="CENTER" />
-                        <ImageView fitHeight="65.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="37.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                            <HBox.margin>
                               <Insets left="5.0" />
                            </HBox.margin>
+                           <image>
+                              <Image url="@../../img/downloadDoc.png" />
+                           </image>
                         </ImageView>
                      </children>
                      <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                   </HBox>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                      <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" text="Certficates" textAlignment="CENTER" />
-                        <ImageView fitHeight="65.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="53.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                            <HBox.margin>
                               <Insets left="5.0" />
                            </HBox.margin>
+                           <image>
+                              <Image url="@../../img/downloadDoc.png" />
+                           </image>
                         </ImageView>
                      </children>
                   </HBox>
@@ -59,12 +59,27 @@
             </VBox>
             <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
                <children>
-                  <ImageView fx:id="questionMark" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fx:id="declineApplication" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="questionMark" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/approveDocument.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></ImageView>
+                  <ImageView fx:id="declineApplication" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/refuseDocument.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></ImageView>
                   <ImageView fx:id="approveApplication" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
+                     <image>
+                        <Image url="@../../img/infoDocument.png" />
+                     </image>
                   </ImageView>
                </children>
             </VBox>
