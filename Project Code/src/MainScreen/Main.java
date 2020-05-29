@@ -1,4 +1,4 @@
-package Alex.MainScreen;
+package MainScreen;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import javafx.application.Application;

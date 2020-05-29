@@ -1,4 +1,4 @@
-package Alex.MainScreen;
+package MainScreen;
 
 import Alex.LogisticsDepartmentScreens.LogisticsDepartmentScreenController;
 import Alex.ProfileFeatures.Employee;

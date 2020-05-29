@@ -1,6 +1,6 @@
 package Alex.SearchResults;
 
-import Alex.MainScreen.SidebarController;
+import MainScreen.SidebarController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;
@@ -9,12 +9,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
