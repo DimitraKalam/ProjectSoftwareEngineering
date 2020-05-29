@@ -2,12 +2,12 @@ package Alex.ChatScreen;
 
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
-import com.gluonhq.charm.glisten.control.Avatar;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 import java.io.FileInputStream;
@@ -22,37 +22,37 @@ public class ChatScreenController {
         private Label User1chat;
 
         @FXML
-        private Avatar Avatar1;
+        private ImageView Avatar1;
 
         @FXML
         private Label User2chat;
 
         @FXML
-        private Avatar Avatar2;
+        private ImageView Avatar2;
 
         @FXML
         private Label User3chat;
 
         @FXML
-        private Avatar Avatar3;
+        private ImageView Avatar3;
 
         @FXML
         private Label User4chat;
 
         @FXML
-        private Avatar Avatar4;
+        private ImageView Avatar4;
 
         @FXML
         private Label User5chat;
 
         @FXML
-        private Avatar Avatar5;
+        private ImageView Avatar5;
 
         @FXML
         private Label User6chat;
 
         @FXML
-        private Avatar Avatar6;
+        private ImageView Avatar6;
 
         private static Employee username;
         private static Profile profile;
@@ -67,7 +67,17 @@ public class ChatScreenController {
                 Profile dummyprofile5=createDummyProfiles("Dummy User 5","Project Code/src/Alex/ChatScreen/image12.jpg");
                 Profile dummyprofile6=createDummyProfiles("Dummy User 6","Project Code/src/Alex/ChatScreen/image13.jpg");
                 Avatar1.setImage(dummyprofile1.getPhoto());
+                Avatar2.setImage(dummyprofile2.getPhoto());
+                Avatar3.setImage(dummyprofile3.getPhoto());
+                Avatar4.setImage(dummyprofile4.getPhoto());
+                Avatar5.setImage(dummyprofile5.getPhoto());
+                Avatar6.setImage(dummyprofile6.getPhoto());
                 User1chat.setText(dummyprofile1.getName());
+                User2chat.setText(dummyprofile2.getName());
+                User3chat.setText(dummyprofile3.getName());
+                User4chat.setText(dummyprofile4.getName());
+                User5chat.setText(dummyprofile5.getName());
+                User6chat.setText(dummyprofile6.getName());
         }
 
 
@@ -80,7 +90,7 @@ public class ChatScreenController {
         void goToChat(MouseEvent event) {
 
         }
-       // createDummyProfiles("DummyUser1", "Project Code/src/Alex/ProfileScreen/image8.jpg");
+
         Profile createDummyProfiles(String name, String location){
                 Employee dummy1 = new Employee (name, Employee.department.none);
                 Profile dummyProfile1=new Profile();
