@@ -1,4 +1,4 @@
-package MainScreen;
+package Alex.MainScreen;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
