@@ -1,6 +1,6 @@
 package Alex.SearchResults;
 
-import MainScreen.SidebarController;
+import Alex.MainScreen.SidebarController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;

@@ -1,4 +1,4 @@
-package MainScreen;
+package Alex.MainScreen;
 
 import Alex.ChatScreen.ChatScreenController;
 import Alex.ProfileFeatures.Employee;
