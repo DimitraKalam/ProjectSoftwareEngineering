@@ -1,25 +1,29 @@
 package Dimitris.ToDoListFeatures;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
+
+import java.util.Vector;
 
 public class ToDoListCompositionScreenController {
 
 
     @FXML // fx:id="EntriesTable"
-    private TableView<?> EntriesTable; // Value injected by FXMLLoader
+    private TableView<ToDoList> EntriesTable; // Value injected by FXMLLoader
 
     @FXML // fx:id="SaveChangesButton"
     private Button SaveChangesButton; // Value injected by FXMLLoader
 
     @FXML // fx:id="CancelButton"
     private Button CancelButton; // Value injected by FXMLLoader
+
+    @FXML
+    private TableColumn<ToDoList, String> NameColumn;
 
     @FXML
     void Cancel(MouseEvent event) {
@@ -38,5 +42,17 @@ public class ToDoListCompositionScreenController {
         alert.setHeaderText(null);
         alert.setContentText("Changes Saved");
         alert.showAndWait();
+
+        InitializeData();
+    }
+
+    void InitializeData()
+    {
+        Vector<ToDoList> ToDoListsVector = new Vector<>();
+
+        ToDoListsVector.add(new ToDoList( "List"));
+        ToDoListsVector.add(new ToDoList("Λίστα για το Project"));
+
+        EntriesTable.setItems(FXCollections.observableList(ToDoListsVector));
     }
 }
