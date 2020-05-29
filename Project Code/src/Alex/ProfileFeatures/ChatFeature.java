@@ -19,7 +19,7 @@ public class ChatFeature {
    public void setUsers(List<Profile> users) {
       this.users = users;
    }
-   ChatFeature(List<Profile>x){
+   public ChatFeature(List<Profile> x){
       users=x;
 
    }

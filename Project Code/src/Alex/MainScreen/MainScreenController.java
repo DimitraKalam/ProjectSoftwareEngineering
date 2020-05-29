@@ -30,7 +30,7 @@ public class MainScreenController {
     private Button ChatButton;
 
     @FXML
-    private BorderPane BorderPaneMainScreen;
+    public BorderPane BorderPaneMainScreen;
 
     private static Employee username;
     private static Profile profile;
@@ -60,9 +60,9 @@ public class MainScreenController {
         BorderPaneMainScreen.setCenter(root);
     }
 
-    /*public void initData(Employee x) {
-        this.username=x;
-    }*/
+    public void changeScene(Parent x){
+        BorderPaneMainScreen.setCenter(x);
+    }
 }
 
 
