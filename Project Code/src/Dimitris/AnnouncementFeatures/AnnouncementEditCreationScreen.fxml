@@ -7,9 +7,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.LogisticsDepartmentScreens.PaymentsScreenController">
    <children>
-      <TableView fx:id="EconomicsTable" layoutX="374.0" layoutY="61.0" onSort="#sortAlphabetically" prefHeight="220.0" prefWidth="195.0" style="-fx-background-color: orange;">
+      <TableView fx:id="EconomicsTable" layoutX="374.0" layoutY="61.0" prefHeight="220.0" prefWidth="195.0" style="-fx-background-color: orange;">
         <columns>
-            <TableColumn fx:id="CounterpartyColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="194.0" text="Δυνατότητες Μορφοποίησης" />
+            <TableColumn fx:id="CounterpartyColumn" prefWidth="194.0" text="Δυνατότητες Μορφοποίησης" />
         </columns>
       </TableView>
       <TextArea layoutX="64.0" layoutY="61.0" prefHeight="200.0" prefWidth="253.0" text="Περιεχόμενο Ανακοίνωσης" />

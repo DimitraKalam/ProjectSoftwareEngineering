@@ -12,8 +12,8 @@ public class MainTo extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("ToDoListCompositionScreen.fxml"));
-        primaryStage.setTitle("CompositionScreen");
+        Parent root = FXMLLoader.load(getClass().getResource("ToDoListSearchResultsScreen.fxml"));
+        primaryStage.setTitle("Search Results Screen");
         primaryStage.setScene(new Scene(root, 850, 600));
         primaryStage.show();
     }
