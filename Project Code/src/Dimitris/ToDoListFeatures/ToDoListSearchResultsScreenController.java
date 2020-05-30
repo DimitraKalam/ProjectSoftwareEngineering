@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -25,6 +26,18 @@ public class ToDoListSearchResultsScreenController {
 
     @FXML // fx:id="AmountColumn"
     private TableColumn<?, ?> AmountColumn; // Value injected by FXMLLoader
+
+    @FXML // fx:id="Previewbutton"
+    private Button Previewbutton; // Value injected by FXMLLoader
+
+    @FXML // fx:id="ComposeButton"
+    private Button ComposeButton; // Value injected by FXMLLoader
+
+    @FXML // fx:id="EditButton"
+    private Button EditButton; // Value injected by FXMLLoader
+
+    @FXML // fx:id="DeleteButton"
+    private Button DeleteButton; // Value injected by FXMLLoader
 
     void goToCompositionPage(ActionEvent event) {
         Parent root = null;
