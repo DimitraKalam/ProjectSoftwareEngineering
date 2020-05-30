@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.MainScreen.LoginController">
+   <children>
+      <JFXTextField fx:id="username" layoutX="301.0" layoutY="209.0" prefHeight="29.0" prefWidth="272.0" promptText="Username" style="-fx-background-color: white;" unFocusColor="#280000">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" layoutX="301.0" layoutY="284.0" prefHeight="25.0" prefWidth="272.0" promptText="Password" style="-fx-background-color: white;" />
+      <JFXButton fx:id="login" layoutX="475.0" layoutY="373.0" onAction="#loginAction" style="-fx-background-color: #145bcc;" text="Log In" textFill="WHITE" />
+      <Label layoutX="152.0" layoutY="123.0" prefHeight="68.0" prefWidth="156.0" text="Welcome!">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="133.0" text="LOG IN">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exitButton" layoutX="339.0" layoutY="373.0" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #E65B65;" text="Exit" textFill="WHITE" />
+      <Label fx:id="logInFail" layoutX="587.0" layoutY="378.0" text="FAIL LOGIN IN" textFill="#d31e33" visible="false" />
+      <ImageView fitHeight="60.0" fitWidth="94.0" layoutX="382.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/User.png" />
+         </image></ImageView>
+      <Label layoutX="359.0" layoutY="27.0" prefHeight="53.0" prefWidth="156.0" text="ComCop" textAlignment="CENTER" textFill="#f2f1dc">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" layoutX="595.0" layoutY="211.0" prefWidth="150.0" visibleRowCount="5" />
+   </children>
+</AnchorPane>
