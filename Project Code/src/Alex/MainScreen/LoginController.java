@@ -16,16 +16,11 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import Alex.ProfileFeatures.Employee.department.*;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LoginController implements Initializable {
 
@@ -90,8 +85,8 @@ public class LoginController implements Initializable {
         SidebarController.initEmployee(emp);
 
         Stage stage = new Stage();
-        stage.setTitle("Recruiter");
-        stage.setScene(new Scene(root1));
+        stage.setTitle("ComCop");
+        stage.setScene(new Scene(root1, 850,600));
         stage.show();
         Stage logInWindow = (Stage) login.getScene().getWindow();
         logInWindow.close();
