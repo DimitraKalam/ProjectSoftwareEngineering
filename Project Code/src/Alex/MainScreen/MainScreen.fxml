@@ -9,12 +9,12 @@
    <left>
       <VBox prefHeight="200.0" prefWidth="114.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="AnnouncementsButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="114.0" text="Announcements" />
+            <Button fx:id="AnnouncementsButton" mnemonicParsing="false" onAction="#goToAnouncements" prefHeight="35.0" prefWidth="114.0" text="Announcements" />
             <Button fx:id="CalendarButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="122.0" text="Calendar">
                <VBox.margin>
                   <Insets />
                </VBox.margin></Button>
-            <Button fx:id="ToDoListButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="114.0" text="To-do List" />
+            <Button fx:id="ToDoListButton" mnemonicParsing="false" onAction="#goToToDoList" prefHeight="32.0" prefWidth="114.0" text="To-do List" />
             <Button fx:id="ChatButton" mnemonicParsing="false" onAction="#goToChatScreen" prefHeight="32.0" prefWidth="120.0" text="Chat" />
          </children>
          <BorderPane.margin>
