@@ -13,7 +13,7 @@
          <center>
             <TableView fx:id="EntriesTable" prefHeight="158.0" prefWidth="391.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
                <columns>
-                  <TableColumn fx:id="AmountColumn" prefWidth="404.0" sortable="false" text="ToDo Λίστες" />
+                  <TableColumn fx:id="NameColumn" prefWidth="404.0" sortable="false" text="ToDo Λίστες" />
                </columns>
             </TableView>
          </center>
