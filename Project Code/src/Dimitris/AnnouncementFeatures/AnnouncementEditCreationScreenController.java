@@ -26,19 +26,6 @@ public class AnnouncementEditCreationScreenController {
     @FXML // fx:id="Column"
     private TableColumn<?, ?> Column; // Value injected by FXMLLoader
 
-    void goToEditCompositionPage(ActionEvent event) {
-        Parent root = null;
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AnnouncementEditCreationScreen.fxml"));
-            root = fxmlLoader.load();
-            AnnouncementEditCreationScreenController editCreationScreenController = fxmlLoader.getController();
-            editCreationScreenController.InitializeData();
-
-        } catch (IOException ex) {
-            Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
     void InitializeData()
     {
         Vector<Announcement> AnnouncementVector = new Vector<>();
