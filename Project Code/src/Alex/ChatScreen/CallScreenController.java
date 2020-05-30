@@ -29,7 +29,7 @@ public class CallScreenController {
                username=x;
                profile=y;
                chat=z;
-               chat.isGroup
+              // chat.isGroup
         }
     }
 
