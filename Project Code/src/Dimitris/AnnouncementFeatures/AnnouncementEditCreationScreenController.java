@@ -31,8 +31,8 @@ public class AnnouncementEditCreationScreenController {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AnnouncementPublicationScreen.fxml"));
             root = fxmlLoader.load();
-            ToDoListCompositionScreenController compositionScreenController = fxmlLoader.getController();
-            compositionScreenController.InitializeData();
+            AnnouncementEditCreationScreenController editCreationScreenController = fxmlLoader.getController();
+            editCreationScreenController.InitializeData();
 
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);

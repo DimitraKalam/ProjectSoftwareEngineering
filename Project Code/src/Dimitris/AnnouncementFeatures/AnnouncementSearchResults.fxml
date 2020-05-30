@@ -4,14 +4,13 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.LogisticsDepartmentScreens.PaymentsScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dimitris.AnnouncementFeatures.AnnouncementSearchResultsScreenController">
    <children>
-      <TableView fx:id="EconomicsTable" layoutX="76.0" layoutY="100.0" onSort="#sortAlphabetically" prefHeight="200.0" prefWidth="405.0" style="-fx-background-color: orange;">
+      <TableView fx:id="EntriesTable" layoutX="76.0" layoutY="100.0" prefHeight="200.0" prefWidth="405.0" style="-fx-background-color: orange;">
         <columns>
-          <TableColumn fx:id="NameColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="100.0" text="ID  Ανακοίνωσης" />
-          <TableColumn fx:id="DateColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="100.0" text="Συντάκτης" />
-            <TableColumn fx:id="AmountColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="126.0" text="Ημερομηνία" />
-            <TableColumn fx:id="CounterpartyColumn" onEditCancel="#MakeUneditable" onEditCommit="#SaveData" onEditStart="#MakeEditable" prefWidth="78.0" text="Delete" />
+          <TableColumn fx:id="InfoColumn" prefWidth="139.0" text="Όνομα Ανακοίνωσης" />
+          <TableColumn fx:id="InfoColumn" prefWidth="204.0" text="Πληροφορίες Ανακοίνωσης" />
+            <TableColumn fx:id="DeleteColumn" minWidth="0.0" prefWidth="61.0" text="Delete" />
         </columns>
       </TableView>
    </children>
