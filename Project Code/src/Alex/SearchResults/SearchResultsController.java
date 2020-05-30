@@ -1,6 +1,8 @@
 package Alex.SearchResults;
 
+import Alex.ChatScreen.MessageScreenController;
 import Alex.MainScreen.SidebarController;
+import Alex.ProfileFeatures.ChatFeature;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;
@@ -9,10 +11,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -58,8 +61,24 @@ public class SearchResultsController {
 
 
     @FXML
-    public void goToChat(MouseEvent event) {
+    public void goToChat(ActionEvent event) {
+        Parent root = null;
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatScreen/MessageScreen.fxml"));
+            root = (Parent) fxmlLoader.load();
+            MessageScreenController messageScreenController = fxmlLoader.getController();
+            List<Profile> dummyChat =new ArrayList<>();
+            dummyChat.add(profile);
+            dummyChat.add(dummyProfile);
+            ChatFeature chat= new ChatFeature(dummyChat);
+            messageScreenController.initData(username,profile, chat);
 
+
+        } catch (IOException ex) {
+            Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        borderPanee.setCenter(root);
     }
 
     @FXML
