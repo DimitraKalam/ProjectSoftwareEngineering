@@ -46,7 +46,7 @@ public class ToDoListCompositionScreenController {
         InitializeData();
     }
 
-    void InitializeData()
+    public void InitializeData()
     {
         Vector<ToDoList> ToDoListsVector = new Vector<>();
 
