@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.util.Vector;
@@ -18,9 +19,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class AnnouncementSearchResultsScreenController {
+    @FXML
+    private javafx.scene.layout.BorderPane BorderPane;
 
     @FXML
     private TableView<Announcement> EntriesTable;
+
+    @FXML
+    private TableColumn<?, ?> NameColumn;
 
     @FXML
     private TableColumn<?, ?> InfoColumn;
@@ -28,17 +34,18 @@ public class AnnouncementSearchResultsScreenController {
     @FXML
     private TableColumn<?, ?> DeleteColumn;
 
-    @FXML // fx:id="SearchButton"
-    private Button SearchButton; // Value injected by FXMLLoader
-
-    @FXML // fx:id="PublishButton"
-    private Button PublishButton; // Value injected by FXMLLoader
-
-    @FXML // fx:id="EditCreationButton"
-    private Button EditCreationButton; // Value injected by FXMLLoader
+    @FXML
+    private Button PublishButton;
 
     @FXML
-    void Search(MouseEvent event) {
+    private Button SearchButton;
+
+    @FXML
+    private Button EditCreationButton;
+
+    @FXML
+    void Search(MouseEvent event)
+    {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
         alert.setHeaderText(null);
@@ -53,7 +60,9 @@ public class AnnouncementSearchResultsScreenController {
         EntriesTable.setItems(FXCollections.observableList(AnnouncementVector));
     }
 
-    void goToEditCompositionPage(ActionEvent event) {
+    @FXML
+    void goToEditCreationPage(ActionEvent event)
+    {
         Parent root = null;
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AnnouncementEditCreationScreen.fxml"));
@@ -64,8 +73,10 @@ public class AnnouncementSearchResultsScreenController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BorderPane.setCenter(root);
     }
 
+    @FXML
     void goToPublicationPage(ActionEvent event) {
         Parent root = null;
         try{
@@ -77,5 +88,6 @@ public class AnnouncementSearchResultsScreenController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BorderPane.setCenter(root);
     }
 }
