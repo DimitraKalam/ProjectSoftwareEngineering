@@ -42,7 +42,7 @@ public class Main extends Application {
         logisticsProfile.setPosition("Logistics Intern");
         Image image = null;
         try {
-            image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image2.jpg"));
+            image = new Image(new FileInputStream("../../ProfileScreen/image2.jpg"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
