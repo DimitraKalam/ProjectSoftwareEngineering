@@ -1,6 +1,7 @@
 package Alex.MainScreen;
 
 import Alex.ProfileFeatures.Employee;
+import Alex.ProfileFeatures.Profile;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -12,9 +13,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import Alex.ProfileFeatures.Employee.department.*;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -55,14 +60,34 @@ public class LoginController implements Initializable {
 
     }
 
+    public Profile createProfile (Employee employee){
+        Profile randomProfile = new Profile();
+        randomProfile.setUser(employee);
+        // LocalDate date= LocalDate.parse("Mon Feb 05 2017");
+        //logisticsProfile.setDate(date);
+        randomProfile.setSalary(2000);
+        randomProfile.setPosition(employee.getDepartment().toString());
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image2.jpg"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        randomProfile.setPhoto(image);
+        return randomProfile;
+    }
+
+
+
     @FXML
     void loginAction(ActionEvent event) throws IOException {
         String dep = comboBox.getValue();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Sidebar.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
+        Employee emp = new Employee(username.getText(), Employee.department.valueOf(dep));
 
-        MainScreenController mainScreenController = fxmlLoader.getController();
-        MainScreenController.initEmployee(new Employee(username.getText(), Employee.department.valueOf(dep)));
+        SidebarController sidebarController = fxmlLoader.getController();
+        SidebarController.initEmployee(emp);
 
         Stage stage = new Stage();
         stage.setTitle("Recruiter");

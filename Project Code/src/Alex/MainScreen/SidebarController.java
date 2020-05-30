@@ -5,6 +5,7 @@ import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;
 import Alex.SearchResults.SearchResultsController;
+import Omiros.HRDepartment.HRDepartmentSidebarController;
 import com.gluonhq.charm.glisten.control.TextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -125,9 +126,10 @@ public class SidebarController {
     }
     @FXML
     void goToMyDepartment(ActionEvent event) {
+        Parent root =null;
         switch(username.getDepartment()){
             case Logistics:
-                Parent root = null;
+                root = null;
                 try{
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../LogisticsDepartmentScreens/LogisticsScreen.fxml"));
                     root = (Parent) fxmlLoader.load();
@@ -140,6 +142,17 @@ public class SidebarController {
                 borderPanee.setCenter(root);
                 break;
             case HR:
+                root = null;
+                try{
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Omiros/HRDepartment/HRDepartmentRecruitSideBar.fxml"));
+                    root = (Parent) fxmlLoader.load();
+                    HRDepartmentSidebarController logisticsDepartmentScreenController = fxmlLoader.getController();
+                    //logisticsDepartmentScreenController.setVariables(username,profile);
+                }
+                catch (IOException ex) {
+                    Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                borderPanee.setCenter(root);
                 break;
             case CostumerSupport:
                 break;
