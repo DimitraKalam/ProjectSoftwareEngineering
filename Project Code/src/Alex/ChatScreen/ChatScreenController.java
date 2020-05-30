@@ -81,11 +81,12 @@ public class ChatScreenController {
                         ResourceBundle resources=null;
                         root = FXMLLoader.load(getClass().getClassLoader().getResource("CallScreen.fxml"), resources);
                         Stage stage = new Stage();
-                        stage.setTitle("My New Stage Title");
+                        stage.setTitle("Call");
                         stage.setScene(new Scene(root, 450, 450));
                         stage.show();
                         // Hide this current window (if this is what you want)
                         ((Node)(event.getSource())).getScene().getWindow().hide();
+                        CallScreenController.initData();
                 }
                 catch (IOException e) {
                         e.printStackTrace();
