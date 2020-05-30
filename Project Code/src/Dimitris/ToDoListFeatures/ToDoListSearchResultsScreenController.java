@@ -11,6 +11,8 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -21,14 +23,8 @@ public class ToDoListSearchResultsScreenController {
     @FXML // fx:id="AnchorPane"
     private javafx.scene.layout.AnchorPane AnchorPane; // Value injected by FXMLLoader
 
-    @FXML // fx:id="EconomicsTable"
-    private TableView<?> EconomicsTable; // Value injected by FXMLLoader
-
-    @FXML // fx:id="AmountColumn"
-    private TableColumn<?, ?> AmountColumn; // Value injected by FXMLLoader
-
-    @FXML // fx:id="Previewbutton"
-    private Button Previewbutton; // Value injected by FXMLLoader
+    @FXML // fx:id="BorderPane"
+    private javafx.scene.layout.BorderPane BorderPane; // Value injected by FXMLLoader
 
     @FXML // fx:id="ComposeButton"
     private Button ComposeButton; // Value injected by FXMLLoader
@@ -36,9 +32,19 @@ public class ToDoListSearchResultsScreenController {
     @FXML // fx:id="EditButton"
     private Button EditButton; // Value injected by FXMLLoader
 
+    @FXML // fx:id="PreviewButton"
+    private Button PreviewButton; // Value injected by FXMLLoader
+
     @FXML // fx:id="DeleteButton"
     private Button DeleteButton; // Value injected by FXMLLoader
 
+    @FXML // fx:id="EconomicsTable"
+    private TableView<?> EconomicsTable; // Value injected by FXMLLoader
+
+    @FXML // fx:id="AmountColumn"
+    private TableColumn<?, ?> AmountColumn; // Value injected by FXMLLoader
+
+    @FXML
     void goToCompositionPage(ActionEvent event) {
         Parent root = null;
         try{
@@ -50,8 +56,10 @@ public class ToDoListSearchResultsScreenController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BorderPane.setCenter(root);
     }
 
+    @FXML
     void goToEditPage(ActionEvent event) {
         Parent root = null;
         try{
@@ -63,8 +71,10 @@ public class ToDoListSearchResultsScreenController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BorderPane.setCenter(root);
     }
 
+    @FXML
     void goToPreviewPage(ActionEvent event) {
         Parent root = null;
         try{
@@ -76,8 +86,10 @@ public class ToDoListSearchResultsScreenController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BorderPane.setCenter(root);
     }
 
+    @FXML
     void goToDeletePage(ActionEvent event) {
         Parent root = null;
         try{
@@ -89,5 +101,6 @@ public class ToDoListSearchResultsScreenController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BorderPane.setCenter(root);
     }
 }
