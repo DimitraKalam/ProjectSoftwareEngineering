@@ -98,7 +98,7 @@ public class SidebarController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
             root = (Parent) fxmlLoader.load();
            MainScreenController mainScreenController = fxmlLoader.getController();
-           mainScreenController.initEmployee(username);
+           mainScreenController.initEmployee(username,profile);
 
         } catch (IOException ex) {
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);

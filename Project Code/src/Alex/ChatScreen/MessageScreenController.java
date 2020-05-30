@@ -47,7 +47,7 @@ public class MessageScreenController {
         ChatMessage kainourio = new ChatMessage(MessageText.getText(),username);
         MessageText.clear();
         chat.newMessage(kainourio);
-        String temp=kainourio.getSender()+" said " +kainourio.getText();
+        String temp= new StringBuilder().append(kainourio.getSender().getName()).append(" said ").append(kainourio.getText()).toString();
         items.add(temp);
         MessagesList.setItems(items);
 
@@ -60,7 +60,7 @@ public class MessageScreenController {
             int count=0;
             List<Profile> all= chats.getUsers();
            for(Profile x: all ) {
-               if(x.getName()!=username.getName()){
+               if(!x.getName().equals(username.getName())){
                    count++;
                }
            }
@@ -69,7 +69,7 @@ public class MessageScreenController {
             }
             if(!group){
                 for(Profile x: all ) {
-                    if(x.getName()!=username.getName()) {
+                    if(!x.getName().equals(username.getName())) {
                         PhotoField.setImage(((Profile)x).getPhoto());
                         NameLabel.setText(((Profile)x).getName());
                     }
@@ -82,19 +82,18 @@ public class MessageScreenController {
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
-                String groupchatname=null;
+                StringBuilder groupchatname= null;
                 for(Profile x: all ) {
-                    if(x.getName()!=username.getName()) {
+                    if(!x.getName().equals(username.getName())) {
 
-                      groupchatname= groupchatname +x.getName()+ "\n";
+                      groupchatname.append(x.getName()).append("\n");
                     }
                 }
             }
 
             List<ChatMessage> allMessages= chat.returnChats();
             for(ChatMessage x: allMessages){
-                String temporary=null;
-                temporary=x.getSender() +" said " +x.getText();
+                String temporary = new StringBuilder().append(x.getSender().getName()).append(" said ").append(x.getText()).toString();
                 items.add(temporary);
             }
             MessagesList.setItems(items);

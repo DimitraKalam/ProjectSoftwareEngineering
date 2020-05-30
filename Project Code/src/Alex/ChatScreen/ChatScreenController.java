@@ -104,7 +104,24 @@ public class ChatScreenController {
 
         @FXML
         void pressed1(MouseEvent event) {
-                goToChat(dummyprofile1);
+
+                Parent root = null;
+
+                try{
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MessageScreen.fxml"));
+                        root = (Parent) fxmlLoader.load();
+                        MessageScreenController messageScreenController = fxmlLoader.getController();
+                        List<Profile> dummyChat =new ArrayList<>();
+                        dummyChat.add(profile);
+                        dummyChat.add(dummyprofile1);
+                        ChatFeature chats= new ChatFeature(dummyChat);
+                        messageScreenController.initData(username,profile,chats);
+
+                } catch (IOException ex) {
+                        Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                borderPane.setCenter(root);
+
         }
 
         @FXML
@@ -149,14 +166,14 @@ public class ChatScreenController {
                 Parent root = null;
 
                 try{
-                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatScreen/MessageScreen.fxml"));
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MessageScreen.fxml"));
                         root = (Parent) fxmlLoader.load();
                         MessageScreenController messageScreenController = fxmlLoader.getController();
                         List<Profile> dummyChat =new ArrayList<>();
                         dummyChat.add(profile);
                         dummyChat.add(x);
-                        ChatFeature chat= new ChatFeature(dummyChat);
-                        messageScreenController.initData(username,profile,chat);
+                        ChatFeature chats= new ChatFeature(dummyChat);
+                        messageScreenController.initData(username,profile,chats);
 
                 } catch (IOException ex) {
                         Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);

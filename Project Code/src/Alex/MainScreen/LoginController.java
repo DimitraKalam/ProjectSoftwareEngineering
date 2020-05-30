@@ -1,6 +1,5 @@
 package Alex.MainScreen;
 
-import Alex.ProfileFeatures.Employee;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -13,11 +12,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-import Alex.ProfileFeatures.Employee.department.*;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LoginController {
 
@@ -58,7 +53,7 @@ public class LoginController {
         Parent root1 = (Parent) fxmlLoader.load();
 
         MainScreenController mainScreenController = fxmlLoader.getController();
-        MainScreenController.initEmployee(Employee(username.getText(), ));
+        //MainScreenController.initEmployee(Employee(username.getText())),;
 
         Stage stage = new Stage();
         stage.setTitle("Recruiter");

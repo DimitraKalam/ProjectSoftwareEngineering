@@ -30,18 +30,17 @@ public class MainScreenController {
     private Button ChatButton;
 
     @FXML
-    public BorderPane BorderPaneMainScreen;
+    private BorderPane BorderPaneMainScreen;
 
     private static Employee username;
     private static Profile profile;
 
-    public static void initEmployee(Employee x) {
+    public static void initEmployee(Employee x, Profile y) {
         username=x;
-    }
-
-    public static void initProfile(Profile y) {
         profile=y;
     }
+
+
 
     @FXML
     void goToChatScreen(ActionEvent event) {
