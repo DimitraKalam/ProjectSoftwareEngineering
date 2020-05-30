@@ -21,7 +21,10 @@ public class CallScreenController {
         @FXML
         private Button EndCallButton;
 
-        @FXML
+    public static void initData() {
+    }
+
+    @FXML
         void endCall(ActionEvent event) {
 
         }
