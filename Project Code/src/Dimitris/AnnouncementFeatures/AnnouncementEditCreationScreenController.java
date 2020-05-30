@@ -29,7 +29,7 @@ public class AnnouncementEditCreationScreenController {
     void goToEditCompositionPage(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AnnouncementPublicationScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AnnouncementEditCreationScreen.fxml"));
             root = fxmlLoader.load();
             AnnouncementEditCreationScreenController editCreationScreenController = fxmlLoader.getController();
             editCreationScreenController.InitializeData();
