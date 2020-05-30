@@ -7,6 +7,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
@@ -15,11 +16,13 @@ import javafx.stage.Stage;
 
 import Alex.ProfileFeatures.Employee.department.*;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class LoginController {
+public class LoginController implements Initializable {
 
     private String hrConnect = "HR";
     private String csConnect = "CR";
@@ -53,12 +56,13 @@ public class LoginController {
     }
 
     @FXML
-    void logInAction(ActionEvent event) throws IOException {
+    void loginAction(ActionEvent event) throws IOException {
+        String dep = comboBox.getValue();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
 
         MainScreenController mainScreenController = fxmlLoader.getController();
-        MainScreenController.initEmployee(Employee(username.getText(), ));
+        MainScreenController.initEmployee(new Employee(username.getText(), Employee.department.valueOf(dep)));
 
         Stage stage = new Stage();
         stage.setTitle("Recruiter");
@@ -68,4 +72,13 @@ public class LoginController {
         logInWindow.close();
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        comboBox.getItems().add("none");
+        comboBox.getItems().add("HR");
+        comboBox.getItems().add("Logistics");
+        comboBox.getItems().add("TechnicalSupport");
+        comboBox.getItems().add("CostumerSupport");
+        comboBox.setValue("none");
+    }
 }

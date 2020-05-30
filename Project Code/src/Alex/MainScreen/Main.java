@@ -17,7 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Sidebar.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
             primaryStage.setTitle("COMCOP");
         primaryStage.setScene(new Scene(root, 850, 600));
         primaryStage.show();
