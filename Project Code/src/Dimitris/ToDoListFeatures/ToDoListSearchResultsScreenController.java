@@ -26,7 +26,6 @@ public class ToDoListSearchResultsScreenController {
     @FXML // fx:id="AmountColumn"
     private TableColumn<?, ?> AmountColumn; // Value injected by FXMLLoader
 
-    @FXML
     void goToCompositionPage(ActionEvent event) {
         Parent root = null;
         try{
@@ -40,7 +39,6 @@ public class ToDoListSearchResultsScreenController {
         }
     }
 
-    @FXML
     void goToEditPage(ActionEvent event) {
         Parent root = null;
         try{
@@ -54,7 +52,6 @@ public class ToDoListSearchResultsScreenController {
         }
     }
 
-    @FXML
     void goToPreviewPage(ActionEvent event) {
         Parent root = null;
         try{
