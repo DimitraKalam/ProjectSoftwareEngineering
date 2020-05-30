@@ -42,6 +42,14 @@ public class MessageScreenController {
         private boolean group=false;
         private ObservableList<String> items = FXCollections.observableArrayList();
 
+    @FXML
+    private Button CallButton;
+
+    @FXML
+    void beginCall(ActionEvent event) {
+
+    }
+
         @FXML
         void sendMessage(ActionEvent event) {
         ChatMessage kainourio = new ChatMessage(MessageText.getText(),username);

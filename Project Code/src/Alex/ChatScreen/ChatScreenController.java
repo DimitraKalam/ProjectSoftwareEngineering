@@ -86,7 +86,7 @@ public class ChatScreenController {
                         stage.show();
                         // Hide this current window (if this is what you want)
                         ((Node)(event.getSource())).getScene().getWindow().hide();
-                        CallScreenController.initData();
+                        //CallScreenController.initData();
                 }
                 catch (IOException e) {
                         e.printStackTrace();

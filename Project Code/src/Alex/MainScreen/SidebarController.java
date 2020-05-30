@@ -48,8 +48,8 @@ public class SidebarController {
 
     public static void initEmployee(Employee x) {
         username=x;
-//        if(x.belongsToDepartment(Employee.department.none))
-//            DepartmentButton.setVisible(false);
+        if(x.belongsToDepartment(Employee.department.none))
+            DepartmentButton.setVisible(false);
     }
 
 
@@ -144,7 +144,7 @@ public class SidebarController {
             case HR:
                 root = null;
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Omiros/HRDepartment/HRDepartmentSideBar.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Omiros/HRDepartment/HRDepartmentRecruitSideBar.fxml"));
                     root = (Parent) fxmlLoader.load();
                     HRDepartmentSidebarController logisticsDepartmentScreenController = fxmlLoader.getController();
                     //logisticsDepartmentScreenController.setVariables(username,profile);
