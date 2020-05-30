@@ -4,21 +4,26 @@ import Alex.MainScreen.SidebarController;
 import Alex.ProfileFeatures.ChatFeature;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -65,6 +70,28 @@ public class ChatScreenController {
 
         @FXML
         private ImageView Avatar6;
+
+        @FXML
+        private Button CallButton;
+
+        @FXML
+        void beginCall(ActionEvent event) {
+                Parent root;
+                try {
+                        ResourceBundle resources=null;
+                        root = FXMLLoader.load(getClass().getClassLoader().getResource("CallScreen.fxml"), resources);
+                        Stage stage = new Stage();
+                        stage.setTitle("My New Stage Title");
+                        stage.setScene(new Scene(root, 450, 450));
+                        stage.show();
+                        // Hide this current window (if this is what you want)
+                        ((Node)(event.getSource())).getScene().getWindow().hide();
+                }
+                catch (IOException e) {
+                        e.printStackTrace();
+                }
+
+        }
 
 
         private static Employee username;

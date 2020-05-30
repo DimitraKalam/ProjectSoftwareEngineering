@@ -6,9 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 public class CallScreenController {
 
-
-    public class PleaseProvideControllerClassName {
-
         @FXML
         private ImageView MyPhoto;
 
@@ -25,5 +22,5 @@ public class CallScreenController {
 
     }
 
-}
+
 
