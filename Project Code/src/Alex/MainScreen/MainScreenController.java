@@ -35,13 +35,12 @@ public class MainScreenController {
     private static Employee username;
     private static Profile profile;
 
-    public static void initEmployee(Employee x) {
+    public static void initEmployee(Employee x, Profile y) {
         username=x;
-    }
-
-    public static void initProfile(Profile y) {
         profile=y;
     }
+
+
 
     @FXML
     void goToChatScreen(ActionEvent event) {
@@ -60,9 +59,9 @@ public class MainScreenController {
         BorderPaneMainScreen.setCenter(root);
     }
 
-    /*public void initData(Employee x) {
-        this.username=x;
-    }*/
+    public void changeScene(Parent x){
+        BorderPaneMainScreen.setCenter(x);
+    }
 }
 
 

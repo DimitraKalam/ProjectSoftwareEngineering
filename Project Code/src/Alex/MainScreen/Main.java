@@ -40,7 +40,6 @@ public class Main extends Application {
         //logisticsProfile.setDate(date);
         logisticsProfile.setSalary(2000);
         logisticsProfile.setPosition("Logistics Intern");
-        Image icon = null;
         Image image = null;
         try {
             image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image2.jpg"));
