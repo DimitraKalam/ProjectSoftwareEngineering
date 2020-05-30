@@ -22,15 +22,15 @@ public class ToDoListCompositionScreenController {
     @FXML // fx:id="CancelButton"
     private Button CancelButton; // Value injected by FXMLLoader
 
-    @FXML
-    private TableColumn<ToDoList, String> NameColumn;
+    @FXML // fx:id="NameColumn"
+    private TableColumn<ToDoList, String> NameColumn; // Value injected by FXMLLoader
 
     @FXML
     void Cancel(MouseEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
         alert.setHeaderText(null);
-        alert.setContentText("Back");
+        alert.setContentText("Cancelled");
         alert.showAndWait();
     }
 
@@ -42,8 +42,6 @@ public class ToDoListCompositionScreenController {
         alert.setHeaderText(null);
         alert.setContentText("Changes Saved");
         alert.showAndWait();
-
-        InitializeData();
     }
 
     public void InitializeData()

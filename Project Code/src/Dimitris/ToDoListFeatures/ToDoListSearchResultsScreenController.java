@@ -11,8 +11,6 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -45,7 +43,8 @@ public class ToDoListSearchResultsScreenController {
     private TableColumn<?, ?> AmountColumn; // Value injected by FXMLLoader
 
     @FXML
-    void goToCompositionPage(ActionEvent event) {
+    void goToCompositionPage(ActionEvent event)
+    {
         Parent root = null;
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ToDoListCompositionScreen.fxml"));
@@ -60,7 +59,8 @@ public class ToDoListSearchResultsScreenController {
     }
 
     @FXML
-    void goToEditPage(ActionEvent event) {
+    void goToEditPage(ActionEvent event)
+    {
         Parent root = null;
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ToDoListEditScreen.fxml"));
@@ -75,7 +75,8 @@ public class ToDoListSearchResultsScreenController {
     }
 
     @FXML
-    void goToPreviewPage(ActionEvent event) {
+    void goToPreviewPage(ActionEvent event)
+    {
         Parent root = null;
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ToDoListPreviewScreen.fxml"));
@@ -90,13 +91,14 @@ public class ToDoListSearchResultsScreenController {
     }
 
     @FXML
-    void goToDeletePage(ActionEvent event) {
+    void goToDeletePage(ActionEvent event)
+    {
         Parent root = null;
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ToDoListDeleteScreen.fxml"));
             root = fxmlLoader.load();
-            ToDoListPreviewScreenController previewScreenController = fxmlLoader.getController();
-            previewScreenController.InitializeData();
+            ToDoListDeleteScreenController deleteScreenController = fxmlLoader.getController();
+            deleteScreenController.InitializeData();
 
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
