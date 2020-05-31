@@ -2,9 +2,10 @@
 
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.shape.Rectangle?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dimitris.TechnicalSupportDepartmentEmployeeFeatures.MeasurementsMetricsScreenController">
    <children>
@@ -16,14 +17,29 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="305.0" layoutX="-93.0" layoutY="-86.0" stroke="BLACK" strokeType="INSIDE" width="494.0" />
+                              <TableView prefHeight="172.0" prefWidth="353.0">
+                                <columns>
+                                  <TableColumn prefWidth="118.0" text="Λογισμικό" />
+                                  <TableColumn prefWidth="106.0" text="Τμήμα" />
+                                    <TableColumn prefWidth="128.0" text="Μέτρηση" />
+                                </columns>
+                              </TableView>
                            </children>
                         </AnchorPane>
                   </content>
                 </Tab>
                 <Tab text="       Μετρήσεις  Πόρων     ">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="171.0" prefWidth="353.0">
+                                <columns>
+                                  <TableColumn prefWidth="143.0" text="Υπολογιστικοί Πόροι" />
+                                  <TableColumn prefWidth="99.0" text="Τμήμα" />
+                                    <TableColumn prefWidth="110.0" text="Μέτρηση" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
                   </content>
                 </Tab>
               </tabs>

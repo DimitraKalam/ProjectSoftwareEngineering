@@ -81,8 +81,6 @@ public class SidebarController {
         }
 
         borderPanee.setCenter(root);
-
-
     }
 
     @FXML
@@ -150,7 +148,7 @@ public class SidebarController {
                 break;
             case TechnicalSupport:
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("TechnicalSupportEmployeeFeaturesScreen.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitris/TechnicalSupportDepartmentEmployeeFeatures/TechnicalSupportEmployeeFeaturesScreen.fxml"));
                     root = fxmlLoader.load();
                     TechnicalSupportEmployeeFeaturesScreenController technicalScreenController = fxmlLoader.getController();
 
