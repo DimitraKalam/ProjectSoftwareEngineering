@@ -87,7 +87,7 @@ public class LoginController implements Initializable {
         comboBox.getItems().add("Logistics");
         comboBox.getItems().add("TechnicalSupport");
         comboBox.getItems().add("CostumerSupport");
-        comboBox.setValue("none");
+        comboBox.getSelectionModel().select(1);
     }
 
 }

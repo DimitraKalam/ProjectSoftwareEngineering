@@ -48,7 +48,7 @@
                   <Insets bottom="10.0" left="25.0" />
                </HBox.margin>
             </TextArea>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="107.0" text="FILL FORM">
+            <Button fx:id="fillFromButton" mnemonicParsing="false" onAction="#fillFormAction" prefHeight="50.0" prefWidth="107.0" text="FILL FORM">
                <HBox.margin>
                   <Insets left="100.0" />
                </HBox.margin>
