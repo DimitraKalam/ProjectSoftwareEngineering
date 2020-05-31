@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExcludeFromValidation">
+    <file url="file://$PROJECT_DIR$/Project Code/src/Alex/ChatScreen/CallScreenController.java" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>

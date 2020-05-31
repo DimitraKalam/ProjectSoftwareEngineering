@@ -48,8 +48,8 @@ public class SidebarController {
 
     public static void initEmployee(Employee x) {
         username=x;
-        if(x.belongsToDepartment(Employee.department.none))
-            DepartmentButton.setVisible(false);
+      /*  if(x.belongsToDepartment(Employee.department.none))
+            DepartmentButton.setVisible(false);*/
     }
 
 
