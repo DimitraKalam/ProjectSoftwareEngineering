@@ -5,6 +5,7 @@ import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;
 import Alex.SearchResults.SearchResultsController;
+import Dimitra.Apothetirio.ApothetirioController;
 import Dimitris.TechnicalSupportDepartmentEmployeeFeatures.RemoteControlScreenController;
 import Dimitris.TechnicalSupportDepartmentEmployeeFeatures.TechnicalSupportEmployeeFeaturesScreenController;
 import Dimitris.ToDoListFeatures.ToDoListCompositionScreenController;
@@ -55,6 +56,20 @@ public class SidebarController {
 
 
 
+    @FXML
+    void openRepository(ActionEvent event) {
+        Parent root = null;
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitra/Apothetirio/ApothetirioSample.fxml"));
+            root = (Parent) fxmlLoader.load();
+            ApothetirioController apothetirioController = fxmlLoader.getController();
+
+        } catch (IOException ex) {
+            Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        borderPanee.setCenter(root);
+    }
 
     @FXML
     void Search(ActionEvent event) {
@@ -98,6 +113,8 @@ public class SidebarController {
 
         borderPanee.setCenter(root);
     }
+
+
 
 
     @FXML

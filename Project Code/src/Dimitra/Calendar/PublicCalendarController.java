@@ -1,4 +1,4 @@
-package sample;
+package Dimitra.Calendar;
 
 public class PublicCalendarController {
 }

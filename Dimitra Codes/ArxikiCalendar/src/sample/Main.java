@@ -13,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("ArxikiCalendarSample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Dimitra Codes/ArxikiCalendar/src/sample/ArxikiCalendarSample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 750, 500));
         primaryStage.show();

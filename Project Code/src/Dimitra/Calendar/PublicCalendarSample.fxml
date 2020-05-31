@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PersonalCalendarController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dimitra.Calendar.PublicCalendarController">
     <children>
         <GridPane hgap="5.0" layoutX="33.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="559.0" vgap="5.0">
             <columnConstraints>
@@ -79,7 +79,10 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="73.0" style="-fx-background-color: #3780b1;" text="25" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                            <children>
+                                <Label alignment="TOP_CENTER" layoutX="22.0" layoutY="16.0" prefHeight="49.0" prefWidth="72.0" text="Συνάντηση&#10;16:00 " AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -149,7 +152,10 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #3780b1;" text="4" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                            <children>
+                                <Label alignment="TOP_CENTER" layoutX="36.0" layoutY="6.0" prefHeight="48.0" prefWidth="72.0" text="IT MEETING&#10;9:00-11:00" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -312,10 +318,6 @@
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
                             <children>
                                 <Label layoutY="26.0" prefHeight="17.0" prefWidth="73.0" text="&#10;&#10; appointment" />
-                                <Button alignment="TOP_LEFT" layoutX="-1.0" mnemonicParsing="false" onAction="#choiseButton" prefHeight="48.0" prefWidth="74.0" style="-fx-background-color: WHITE;" text="13:00 &#10;Psychologist&#10; appointment" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <font>
-                              <Font size="9.0" />
-                           </font></Button>
                             </children>
                         </AnchorPane>
                     </items>
@@ -432,7 +434,6 @@
                 </SplitPane>
             </children>
         </GridPane>
-        <Button layoutX="620.0" layoutY="144.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e02727;" text="Notifications" textFill="WHITE" />
         <Button layoutX="350.0" layoutY="23.0" mnemonicParsing="false" text="&gt;" />
         <Button layoutX="113.0" layoutY="23.0" mnemonicParsing="false" text="&lt;" />
         <Label alignment="CENTER" layoutX="138.0" layoutY="24.0" prefHeight="23.0" prefWidth="212.0" text="MARCH 2019">
@@ -440,6 +441,5 @@
                 <Font name="Arial Bold" size="20.0" />
             </font>
         </Label>
-        <Button layoutX="620.0" layoutY="191.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e02727;" text="Appearance" textFill="#eeeded" />
     </children>
 </Pane>

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="391.0" prefWidth="522.0" style="-fx-background-color: #3780b1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ApothetirioController">
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="391.0" prefWidth="522.0" style="-fx-background-color: #3780b1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dimitra.Apothetirio.ApothetirioController">
     <children>
 
         <TableView fx:id="table" layoutX="26.0" layoutY="151.0" prefHeight="200.0" prefWidth="411.0">
