@@ -2,7 +2,7 @@
  * Sample Skeleton for 'RemoteControlScreen.fxml' Controller Class
  */
 
-package Dimitris.ITDepartmentEmployeeFeatures;
+package Dimitris.TechnicalSupportDepartmentEmployeeFeatures;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

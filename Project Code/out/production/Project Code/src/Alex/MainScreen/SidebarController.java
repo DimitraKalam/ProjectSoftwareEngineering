@@ -5,6 +5,9 @@ import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Alex.ProfileScreen.ProfileScreenController;
 import Alex.SearchResults.SearchResultsController;
+import Dimitris.TechnicalSupportDepartmentEmployeeFeatures.RemoteControlScreenController;
+import Dimitris.TechnicalSupportDepartmentEmployeeFeatures.TechnicalSupportEmployeeFeaturesScreenController;
+import Dimitris.ToDoListFeatures.ToDoListCompositionScreenController;
 import Omiros.HRDepartment.HRDepartmentSidebarController;
 import com.gluonhq.charm.glisten.control.TextField;
 import javafx.event.ActionEvent;
@@ -146,6 +149,15 @@ public class SidebarController {
             case CostumerSupport:
                 break;
             case TechnicalSupport:
+                try{
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("TechnicalSupportEmployeeFeaturesScreen.fxml"));
+                    root = fxmlLoader.load();
+                    TechnicalSupportEmployeeFeaturesScreenController technicalScreenController = fxmlLoader.getController();
+
+                } catch (IOException ex) {
+                    Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                borderPanee.setCenter(root);
                 break;
 
 
