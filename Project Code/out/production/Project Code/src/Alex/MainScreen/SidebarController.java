@@ -142,15 +142,14 @@ public class SidebarController {
                 borderPanee.setCenter(root);
                 break;
             case HR:
-                root = null;
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Omiros/HRDepartment/HRDepartmentRecruitSideBar.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Omiros/HRDepartment/HRDepartmentSideBar.fxml"));
                     root = (Parent) fxmlLoader.load();
-                    HRDepartmentSidebarController logisticsDepartmentScreenController = fxmlLoader.getController();
-                    //logisticsDepartmentScreenController.setVariables(username,profile);
+                    HRDepartmentSidebarController hrDepartmentSidebarController = fxmlLoader.getController();
                 }
                 catch (IOException ex) {
                     Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+
                 }
                 borderPanee.setCenter(root);
                 break;

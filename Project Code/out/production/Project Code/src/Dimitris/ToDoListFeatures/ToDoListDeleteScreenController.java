@@ -14,8 +14,8 @@ import java.util.Vector;
 
 public class ToDoListDeleteScreenController {
 
-    @FXML // fx:id="Table"
-    private TableView<ToDoList> Table; // Value injected by FXMLLoader
+    @FXML // fx:id="EntriesTable"
+    private TableView<ToDoList> EntriesTable; // Value injected by FXMLLoader
 
     @FXML // fx:id="NameColumn"
     private TableColumn<?, ?> NameColumn; // Value injected by FXMLLoader
@@ -39,6 +39,6 @@ public class ToDoListDeleteScreenController {
         ToDoListsVector.add(new ToDoList( "List"));
         ToDoListsVector.add(new ToDoList("Λίστα για το Project"));
 
-        Table.setItems(FXCollections.observableList(ToDoListsVector));
+        EntriesTable.setItems(FXCollections.observableList(ToDoListsVector));
     }
 }

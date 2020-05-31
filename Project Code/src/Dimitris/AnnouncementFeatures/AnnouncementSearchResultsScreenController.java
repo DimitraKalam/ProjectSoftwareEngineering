@@ -38,20 +38,11 @@ public class AnnouncementSearchResultsScreenController {
     private Button PublishButton;
 
     @FXML
-    private Button SearchButton;
-
-    @FXML
     private Button EditCreationButton;
 
     @FXML
-    void Search(MouseEvent event)
+    public void InitialiseData()
     {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Information Dialog");
-        alert.setHeaderText(null);
-        alert.setContentText("Announcement Found.");
-        alert.showAndWait();
-
         Vector<Announcement> AnnouncementVector = new Vector<>();
 
         AnnouncementVector.add(new Announcement( "Announcement", "Something"));

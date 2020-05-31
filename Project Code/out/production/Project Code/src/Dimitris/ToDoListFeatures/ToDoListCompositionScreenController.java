@@ -1,6 +1,7 @@
 package Dimitris.ToDoListFeatures;
 
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -26,7 +27,7 @@ public class ToDoListCompositionScreenController {
     private TableColumn<ToDoList, String> NameColumn; // Value injected by FXMLLoader
 
     @FXML
-    void Cancel(MouseEvent event) {
+    void Cancel(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
         alert.setHeaderText(null);
@@ -35,7 +36,7 @@ public class ToDoListCompositionScreenController {
     }
 
     @FXML
-    void ToDoListSaveChanges(MouseEvent event)
+    void ToDoListSaveChanges(ActionEvent event)
     {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");

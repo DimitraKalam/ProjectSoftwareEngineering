@@ -1,24 +1,21 @@
 package Dimitris.AnnouncementFeatures;
 
-import Dimitris.ToDoListFeatures.ToDoListCompositionScreenController;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
-import java.io.IOException;
 import java.util.Vector;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Sample Skeleton for 'AnnouncementEditCreationScreen.fxml' Controller Class
  */
 
 public class AnnouncementEditCreationScreenController {
+
     @FXML // fx:id="BorderPane"
     private javafx.scene.layout.BorderPane BorderPane; // Value injected by FXMLLoader
 

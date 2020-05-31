@@ -3,6 +3,7 @@ package Alex.MainScreen;
 import Alex.ChatScreen.ChatScreenController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
+import Dimitris.AnnouncementFeatures.AnnouncementSearchResultsScreenController;
 import Dimitris.ToDoListFeatures.ToDoListSearchResultsScreenController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -43,7 +44,18 @@ public class MainScreenController {
 
     @FXML
     void goToAnouncements(ActionEvent event) {
+        Parent root = null;
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitris/AnnouncementFeatures/AnnouncementSearchResults.fxml"));
+            root = (Parent) fxmlLoader.load();
 
+            AnnouncementSearchResultsScreenController announcementSearchResultsScreenController = fxmlLoader.getController();
+            announcementSearchResultsScreenController.InitialiseData();
+
+        } catch (IOException ex){
+            Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        BorderPaneMainScreen.setCenter(root);
     }
 
 

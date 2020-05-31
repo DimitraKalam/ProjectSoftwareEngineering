@@ -23,7 +23,6 @@
             <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="PublishButton" mnemonicParsing="false" onAction="#goToPublicationPage" prefHeight="25.0" prefWidth="76.0" text="Publish" />
-                  <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#Search" prefHeight="25.0" prefWidth="76.0" text="Search" />
                   <Button fx:id="EditCreationButton" mnemonicParsing="false" onAction="#goToEditCreationPage" text="Edit/Create" />
                </children>
             </VBox>
