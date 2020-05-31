@@ -13,11 +13,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -49,27 +46,12 @@ public class LoginController implements Initializable {
     @FXML
     private ComboBox<String> comboBox;
 
+    private Employee user;
 
+    private Profile profile;
     @FXML
     void exit(ActionEvent event) {
 
-    }
-
-    public Profile createProfile (Employee employee){
-        Profile randomProfile = new Profile();
-        randomProfile.setUser(employee);
-        // LocalDate date= LocalDate.parse("Mon Feb 05 2017");
-        //logisticsProfile.setDate(date);
-        randomProfile.setSalary(2000);
-        randomProfile.setPosition(employee.getDepartment().toString());
-        Image image = null;
-        try {
-            image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image2.jpg"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        randomProfile.setPhoto(image);
-        return randomProfile;
     }
 
 
@@ -79,10 +61,16 @@ public class LoginController implements Initializable {
         String dep = comboBox.getValue();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Sidebar.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
-        Employee emp = new Employee(username.getText(), Employee.department.valueOf(dep));
-
+        Employee user= new Employee("Alex Jones", null);
+        Profile profile=new Profile(user,"Project Code\\src\\Alex\\ProfileScreen\\image2.jpg",2000);
+        user.setDepartment(Employee.department.valueOf(dep));
+        if ((user.getDepartment() != Employee.department.none)) {
+            profile.setPosition(user.getDepartment().name() + " Employee");
+        } else {
+            profile.setPosition("Insert your position here");
+        }
         SidebarController sidebarController = fxmlLoader.getController();
-        SidebarController.initEmployee(emp);
+        SidebarController.initData(user,profile);
 
         Stage stage = new Stage();
         stage.setTitle("ComCop");
@@ -101,4 +89,5 @@ public class LoginController implements Initializable {
         comboBox.getItems().add("CostumerSupport");
         comboBox.setValue("none");
     }
+
 }

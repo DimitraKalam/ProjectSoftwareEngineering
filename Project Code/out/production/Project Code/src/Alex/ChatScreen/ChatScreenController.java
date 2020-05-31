@@ -12,14 +12,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -109,12 +106,12 @@ public class ChatScreenController {
                 profile=y;
                 username=x;
 
-                dummyprofile1=createDummyProfiles("Dummy User 1","Project Code/src/Alex/ChatScreen/image8.jpg");
-                dummyprofile2=createDummyProfiles("Dummy User 2","Project Code/src/Alex/ChatScreen/image9.jpg");
-                dummyprofile3=createDummyProfiles("Dummy User 3","Project Code/src/Alex/ChatScreen/image10.jpg");
-                dummyprofile4=createDummyProfiles("Dummy User 4","Project Code/src/Alex/ChatScreen/image11.jpg");
-                dummyprofile5=createDummyProfiles("Dummy User 5","Project Code/src/Alex/ChatScreen/image12.jpg");
-                dummyprofile6=createDummyProfiles("Dummy User 6","Project Code/src/Alex/ChatScreen/image13.jpg");
+                dummyprofile1=new Profile("Dummy User 1","Project Code/src/Alex/ChatScreen/image8.jpg");
+                dummyprofile2=new Profile("Dummy User 2","Project Code/src/Alex/ChatScreen/image9.jpg");
+                dummyprofile3=new Profile("Dummy User 3","Project Code/src/Alex/ChatScreen/image10.jpg");
+                dummyprofile4=new Profile("Dummy User 4","Project Code/src/Alex/ChatScreen/image11.jpg");
+                dummyprofile5=new Profile("Dummy User 5","Project Code/src/Alex/ChatScreen/image12.jpg");
+                dummyprofile6=new Profile("Dummy User 6","Project Code/src/Alex/ChatScreen/image13.jpg");
                 Avatar1.setImage(dummyprofile1.getPhoto());
                 Avatar2.setImage(dummyprofile2.getPhoto());
                 Avatar3.setImage(dummyprofile3.getPhoto());
@@ -211,21 +208,8 @@ public class ChatScreenController {
         }
 
 
-        Profile createDummyProfiles(String name, String location){
-                Employee dummy1 = new Employee (name, Employee.department.none);
-                Profile dummyProfile1=new Profile();
-                dummyProfile1.setUser(dummy1);
-                Image image = null;
-                try {
-                        image = new Image(new FileInputStream(location));
-                } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                }
-                dummyProfile1.setPhoto(image);
 
-                return dummyProfile1;
 
-        }
 
 
 
