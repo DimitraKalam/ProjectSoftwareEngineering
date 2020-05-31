@@ -2,7 +2,7 @@
  * Sample Skeleton for 'MeasurementsMetricsScreen.fxml' Controller Class
  */
 
-package Dimitris.ITDepartmentEmployeeFeatures;
+package Dimitris.TechnicalSupportDepartmentEmployeeFeatures;
 
 import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;

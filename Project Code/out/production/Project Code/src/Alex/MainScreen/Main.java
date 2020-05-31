@@ -17,7 +17,6 @@ public class Main extends Application {
         //SidebarController.initProfile(logisticsProfile(employeeLogistics()));
 
 
-
     }
 
 
