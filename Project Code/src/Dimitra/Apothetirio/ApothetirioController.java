@@ -102,7 +102,6 @@ public class ApothetirioController implements Initializable {
 
         filechooser.showOpenDialog(stageFiles);
 
-       // File file = chooser.showOpenDialog(stage);
     }
 
     @FXML
