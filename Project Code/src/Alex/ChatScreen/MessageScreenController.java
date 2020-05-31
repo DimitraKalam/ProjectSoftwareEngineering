@@ -55,7 +55,7 @@ public class MessageScreenController {
         ChatMessage kainourio = new ChatMessage(MessageText.getText(),username);
         MessageText.clear();
         chat.newMessage(kainourio);
-        String temp= new StringBuilder().append(kainourio.getSender().getName()).append(" said ").append(kainourio.getText()).toString();
+        String temp= new StringBuilder().append(kainourio.getSender().getName()).append(" said: ").append(kainourio.getText()).toString();
         items.add(temp);
         MessagesList.setItems(items);
 

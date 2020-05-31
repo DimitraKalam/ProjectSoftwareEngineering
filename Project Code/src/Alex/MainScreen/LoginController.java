@@ -13,11 +13,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -64,8 +61,8 @@ public class LoginController implements Initializable {
         String dep = comboBox.getValue();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Sidebar.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
-        Employee user= employeeCreator();
-        Profile profile=createProfile(user);
+        Employee user= new Employee("Alex Jones", null);
+        Profile profile=new Profile(user,"Project Code\\src\\Alex\\ProfileScreen\\image2.jpg",2000);
         user.setDepartment(Employee.department.valueOf(dep));
         if ((user.getDepartment() != Employee.department.none)) {
             profile.setPosition(user.getDepartment().name() + " Employee");
@@ -92,26 +89,5 @@ public class LoginController implements Initializable {
         comboBox.getItems().add("CostumerSupport");
         comboBox.setValue("none");
     }
-    public static Employee employeeCreator(){
-        //Logistics Employee initialization
-        Employee logistics =new Employee("Alex Jones", null);
 
-        return logistics;
-    }
-    public Profile createProfile(Employee logistics){
-        Profile logisticsProfile= new Profile();
-        logisticsProfile.setUser(logistics);
-        // LocalDate date= LocalDate.parse("Mon Feb 05 2017");
-        //logisticsProfile.setDate(date);
-        logisticsProfile.setSalary(2000);
-        //logisticsProfile.setPosition( logistics.getDepartment().name() + " Intern");
-        Image image = null;
-        try {
-            image = new Image(new FileInputStream("Project Code\\src\\Alex\\ProfileScreen\\image2.jpg"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        logisticsProfile.setPhoto(image);
-        return logisticsProfile;
-    }
 }

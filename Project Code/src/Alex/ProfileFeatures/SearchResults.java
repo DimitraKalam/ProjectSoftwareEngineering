@@ -24,4 +24,5 @@ public class SearchResults {
         return similarSearch;
     }
      public ChatFeature createChat(){return null;}
+     public void addUser(Employee x){users.add(x);}
 }
