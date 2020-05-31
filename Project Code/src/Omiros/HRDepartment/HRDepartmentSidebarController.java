@@ -2,18 +2,28 @@ package Omiros.HRDepartment;
 
 import Alex.LogisticsDepartmentScreens.LogisticsDepartmentScreenController;
 import Alex.MainScreen.SidebarController;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 public class HRDepartmentSidebarController {
+    @FXML
+    private ImageView certificatesAction;
+
+    @FXML
+    private ImageView skillsAction;
+
 
     @FXML
     private BorderPane borderPanee;
@@ -26,6 +36,8 @@ public class HRDepartmentSidebarController {
 
     @FXML
     private Button employeesStatistics;
+
+
 
     @FXML
     void employeesStatisticsAction(ActionEvent event) {
