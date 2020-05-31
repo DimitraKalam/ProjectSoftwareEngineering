@@ -3,12 +3,27 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DialogPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alex.LogisticsDepartmentScreens.PaymentsScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dimitris.ITDepartmentEmployeeFeatures.RemoteControlScreenController">
    <children>
-      <DialogPane headerText="Εισάγετε το ID του απομακρυσμένου υπολογιστή" layoutX="113.0" layoutY="96.0" prefHeight="113.0" prefWidth="360.0" />
-      <Button layoutX="399.0" layoutY="175.0" mnemonicParsing="false" text="Ok" />
-      <Button disable="true" layoutX="104.0" layoutY="343.0" mnemonicParsing="false" text="Call" />
-      <Button disable="true" layoutX="196.0" layoutY="343.0" mnemonicParsing="false" text="File Transfer" />
+      <BorderPane fx:id="BorderPane" layoutX="7.0" layoutY="7.0" prefHeight="293.0" prefWidth="481.0">
+         <center>
+            <DialogPane headerText="Εισάγετε το ID του απομακρυσμένου υπολογιστή" prefHeight="113.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+               <graphic>
+                  <Button fx:id="ConnectButton" mnemonicParsing="false" onAction="#Connect" text="Connect" />
+               </graphic>
+            </DialogPane>
+         </center>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="CallButton" mnemonicParsing="false" onAction="#CallFeature" prefHeight="25.0" prefWidth="80.0" text="Call" />
+                  <Button fx:id="FileTransferButton" mnemonicParsing="false" onAction="#FileTransferFeature" text="File Transfer" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
    </children>
 </AnchorPane>

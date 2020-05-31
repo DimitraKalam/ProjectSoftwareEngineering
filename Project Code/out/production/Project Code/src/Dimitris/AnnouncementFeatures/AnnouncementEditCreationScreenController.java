@@ -15,7 +15,7 @@ import java.util.Vector;
  */
 
 public class AnnouncementEditCreationScreenController {
-    
+
     @FXML // fx:id="BorderPane"
     private javafx.scene.layout.BorderPane BorderPane; // Value injected by FXMLLoader
 
