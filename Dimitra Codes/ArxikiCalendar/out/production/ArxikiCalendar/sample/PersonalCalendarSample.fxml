@@ -84,7 +84,16 @@
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
                      <children>
-                        <Label alignment="TOP_LEFT" layoutX="22.0" layoutY="16.0" prefHeight="49.0" prefWidth="72.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label fx:id="textfeb25" alignment="TOP_LEFT" layoutX="22.0" layoutY="16.0" prefHeight="49.0" prefWidth="72.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <contextMenu>
+                                <ContextMenu>
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#editfeb25" text="edit" />
+                                        <MenuItem mnemonicParsing="false" onAction="#deletefeb25" text="delete" />
+                                    </items>
+                                </ContextMenu>
+                            </contextMenu>
+                        </Label>
                      </children></AnchorPane>
                     </items>
                 </SplitPane>
@@ -95,7 +104,20 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="26" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="textfeb26" alignment="TOP_LEFT" layoutX="23.0" layoutY="16.0" prefHeight="48.0" prefWidth="73.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#editfeb26" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#deletefeb26" text="delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></Label>
+
+
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -105,7 +127,18 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="27" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="textfeb27" alignment="TOP_LEFT" prefHeight="48.0" prefWidth="73.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#editfeb27" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#deletefeb27" text="delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
@@ -115,7 +148,18 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="83.0" style="-fx-background-color: #3780b1;" text="28" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="textfeb28" alignment="TOP_LEFT" prefHeight="48.0" prefWidth="73.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#editfeb28" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#deletefeb28" text="delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
@@ -125,7 +169,18 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="1" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text1" alignment="TOP_LEFT" prefHeight="48.0" prefWidth="73.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit1" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete1" text="delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
@@ -135,7 +190,18 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="2" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text2" alignment="TOP_LEFT" prefHeight="48.0" prefWidth="73.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit2" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete2" text="delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
@@ -145,7 +211,18 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="3" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text3" alignment="TOP_LEFT" prefHeight="48.0" prefWidth="73.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit3" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete3" text="delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="2">
@@ -155,7 +232,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #3780b1;" text="4" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text4" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit4" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete4" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -165,7 +254,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="5" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text5" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit5" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete5" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -175,7 +276,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="6" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text6" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit6" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete6" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
@@ -185,7 +298,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="7" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text7" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit7" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete7" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
@@ -195,7 +320,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="8" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text8" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit8" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete8" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
@@ -205,7 +342,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #3780b1;" text="9" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text9" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit9" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete9" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
@@ -215,7 +364,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="10" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text10" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit10" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete10" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
@@ -225,7 +386,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #3780b1;" text="16" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text11" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit11" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete11" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
@@ -235,7 +408,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #3780b1;" text="17" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text12" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit12" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete12" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
@@ -245,7 +430,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="23" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text13" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit13" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete13" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
@@ -255,7 +452,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="24" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text14" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit14" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete14" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
@@ -265,7 +474,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="30" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text15" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit15" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete15" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
@@ -275,7 +496,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="31" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: #62daca;">
+                     <children>
+                        <Label fx:id="text16" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit16" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete16" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="3">
@@ -285,7 +518,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="73.0" style="-fx-background-color: #3780b1;" text="11" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text17" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit17" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete17" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
@@ -295,7 +540,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="12" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text18" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit18" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete18" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
@@ -307,15 +564,18 @@
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
                      <children>
-                        <Label layoutX="6.0" layoutY="3.0" prefHeight="48.0" prefWidth="74.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label fx:id="text19" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
                            <contextMenu>
                               <ContextMenu>
-                                <items>
-                                  <MenuItem mnemonicParsing="false" text="edit" />
-                                    <MenuItem mnemonicParsing="false" text="delete" />
-                                </items>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit19" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete19" text="delete" />
+                                 </items>
                               </ContextMenu>
                            </contextMenu>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
                         </Label>
                      </children></AnchorPane>
                     </items>
@@ -328,13 +588,18 @@
                             </children>
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
-                            <children>
-                                <Label layoutY="26.0" prefHeight="17.0" prefWidth="73.0" text="&#10;&#10; appointment" />
-                                <Button alignment="TOP_LEFT" layoutX="-1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="74.0" style="-fx-background-color: WHITE;" text="13:00 &#10;Psychologist&#10; appointment" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <font>
-                                        <Font size="9.0" />
-                                    </font></Button>
-                            </children>
+                     <children>
+                        <Label fx:id="text20" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit20" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete20" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children>
                         </AnchorPane>
                     </items>
                 </SplitPane>
@@ -345,7 +610,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="15" textAlignment="JUSTIFY" textFill="#e7eeec" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text21" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit21" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete21" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="4">
@@ -355,7 +632,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #3780b1;" text="18" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text22" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit22" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete22" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="5">
@@ -365,7 +654,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="25" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text23" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit23" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete23" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
@@ -375,7 +676,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="74.0" style="-fx-background-color: #3780b1;" text="19" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text24" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit24" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete24" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
@@ -385,7 +698,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="26" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text25" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit25" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete25" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
@@ -397,12 +722,12 @@
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
                      <children>
-                        <Label fx:id="text20" alignment="TOP_LEFT" layoutX="23.0" layoutY="6.0" prefHeight="48.0" prefWidth="74.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label fx:id="text26" alignment="TOP_LEFT" layoutX="23.0" layoutY="6.0" prefHeight="48.0" prefWidth="74.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <contextMenu>
                               <ContextMenu>
                                  <items>
-                                    <MenuItem mnemonicParsing="false" onAction="#edit20" text="edit" />
-                                    <MenuItem mnemonicParsing="false" onAction="#delete20" text="delete" />
+                                    <MenuItem mnemonicParsing="false" onAction="#edit26" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete26" text="delete" />
                                  </items>
                               </ContextMenu>
                            </contextMenu>
@@ -417,7 +742,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="27" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text27" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit27" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete27" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
@@ -427,7 +764,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="21" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text28" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit28" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete28" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
@@ -437,7 +786,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #3780b1;" text="28" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text29" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit29" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete29" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
@@ -447,7 +808,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="22" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text30" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit30" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete30" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
                 <SplitPane dividerPositions="0.3076923076923077" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
@@ -457,7 +830,19 @@
                                 <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="24.0" prefWidth="76.0" style="-fx-background-color: #3780b1;" text="29" textAlignment="JUSTIFY" textFill="WHITE" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="44.0" prefWidth="62.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="text31" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="72.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#edit31" text="edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#delete31" text="delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                     </children></AnchorPane>
                     </items>
                 </SplitPane>
             </children>
@@ -471,6 +856,6 @@
             </font>
         </Label>
         <Button layoutX="620.0" layoutY="191.0" mnemonicParsing="false" onAction="#changeAppearance" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e02727;" text="Appearance" textFill="#eeeded" />
-      <ColorPicker fx:id="colorPicker" layoutX="608.0" layoutY="231.0" />
+      <ColorPicker fx:id="colorPicker" layoutX="620.0" layoutY="231.0" prefHeight="25.0" prefWidth="100.0" />
     </children>
 </Pane>
