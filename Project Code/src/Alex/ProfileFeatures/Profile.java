@@ -2,14 +2,9 @@ package Alex.ProfileFeatures;
 
 import javafx.scene.image.Image;
 
-import javax.swing.*;
-import java.text.SimpleDateFormat;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 
 public class Profile {
     private String fullname;
@@ -80,7 +75,23 @@ public class Profile {
         return photo;
     }
 
-    public void setPhoto(Image photo) {
-        this.photo = photo;
+    public void setPhoto(String location){
+        Image image = null;
+            try {
+        image = new Image(new FileInputStream(location));
+    } catch (
+    FileNotFoundException e) {
+        e.printStackTrace();
+    }
+            this.photo = image;
+    }
+    public Profile(String name, String location){
+        this.fullname=name;
+        setPhoto(location);
+    }
+    public Profile(Employee users, String location, long money){
+        setUser(users);
+        setPhoto(location);
+        this.salary=money;
     }
 }

@@ -12,11 +12,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -61,19 +58,13 @@ public class SidebarController {
         String  query=SearchBar.getText();
         //Δημιουργουμε ενα dummy user με ονομα το search query για τις αναγκες της εργασιας και της επιδειξης της βασικης λειτουργικοτητας
         Employee dummy = new Employee (query, Employee.department.none);
-        Profile dummyProfile=new Profile();
-        dummyProfile.setUser(dummy);
+        Profile dummyProfile=new Profile(dummy,"Project Code/src/Alex/ProfileScreen/image7.jpg",2500);
+
         dummyProfile.setPosition("Cleaning Staff");
-        dummyProfile.setSalary(2000);
+
         dummyProfile.setContactInfo("Πρόκειται για dummy προφίλ \nπου δημιουργείται με όνομα το query \nτης αναζήτησης για τις ανάγκες της εργασίας \nκαι της επίδειξης της βασικής λειτουργικότητας.");
 
-        Image image = null;
-        try {
-            image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image7.jpg"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        dummyProfile.setPhoto(image);
+
         Parent root = null;
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../SearchResults/SearchResultsScreen.fxml"));
