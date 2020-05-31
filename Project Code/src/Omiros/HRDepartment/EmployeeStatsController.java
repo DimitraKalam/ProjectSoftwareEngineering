@@ -1,23 +1,41 @@
+
 package Omiros.HRDepartment;
 
-import Alex.MainScreen.SidebarController;
-import Alex.ProfileFeatures.Employee;
-import Alex.ProfileFeatures.Profile;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.stage.Stage;
+        import javafx.event.ActionEvent;
+        import javafx.fxml.FXML;
+        import javafx.fxml.FXMLLoader;
+        import javafx.scene.Parent;
+        import javafx.scene.Scene;
+        import javafx.scene.control.Button;
+        import javafx.scene.control.ListView;
+        import javafx.scene.control.TextArea;
+        import javafx.stage.Stage;
 
-import java.io.IOException;
+        import java.io.IOException;
 
 public class EmployeeStatsController {
 
     private String name;
+
+    @FXML
+    private ListView<?> employeeList;
+
+    @FXML
+    private Button chooseEmployeeButton;
+
+    @FXML
+    private Button submitNotesButton;
+
+    @FXML
+    private TextArea notesTextBox;
+
     @FXML
     private Button fillFromButton;
+
+    @FXML
+    void chooseEmployeeAction(ActionEvent event) {
+
+    }
 
     @FXML
     void fillFormAction(ActionEvent event) throws IOException {
@@ -30,6 +48,10 @@ public class EmployeeStatsController {
         stage.setTitle("Evaluation Form");
         stage.setScene(new Scene(root1, 600,400));
         stage.show();
+    }
+    @FXML
+    void submitNotesAction(ActionEvent event) {
+
     }
 
 }
