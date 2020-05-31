@@ -46,16 +46,15 @@ public class SidebarController {
     private static Profile profile;
     private static Employee dummy;
 
-    public static void initEmployee(Employee x) {
+    public static void initData(Employee x,Profile y) {
         username=x;
+        profile=y;
       /*  if(x.belongsToDepartment(Employee.department.none))
             DepartmentButton.setVisible(false);*/
     }
 
 
-    public static void initProfile(Profile y) {
-        profile=y;
-    }
+
 
     @FXML
     void Search(ActionEvent event) {

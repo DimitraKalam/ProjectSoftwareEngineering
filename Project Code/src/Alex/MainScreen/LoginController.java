@@ -49,27 +49,12 @@ public class LoginController implements Initializable {
     @FXML
     private ComboBox<String> comboBox;
 
+    private Employee user;
 
+    private Profile profile;
     @FXML
     void exit(ActionEvent event) {
 
-    }
-
-    public Profile createProfile (Employee employee){
-        Profile randomProfile = new Profile();
-        randomProfile.setUser(employee);
-        // LocalDate date= LocalDate.parse("Mon Feb 05 2017");
-        //logisticsProfile.setDate(date);
-        randomProfile.setSalary(2000);
-        randomProfile.setPosition(employee.getDepartment().toString());
-        Image image = null;
-        try {
-            image = new Image(new FileInputStream("Project Code/src/Alex/ProfileScreen/image2.jpg"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        randomProfile.setPhoto(image);
-        return randomProfile;
     }
 
 
@@ -79,10 +64,16 @@ public class LoginController implements Initializable {
         String dep = comboBox.getValue();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Sidebar.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
-        Employee emp = new Employee(username.getText(), Employee.department.valueOf(dep));
-
+        Employee user= employeeCreator();
+        Profile profile=createProfile(user);
+        user.setDepartment(Employee.department.valueOf(dep));
+        if ((user.getDepartment() != Employee.department.none)) {
+            profile.setPosition(user.getDepartment().name() + " Employee");
+        } else {
+            profile.setPosition("Insert your position here");
+        }
         SidebarController sidebarController = fxmlLoader.getController();
-        SidebarController.initEmployee(emp);
+        SidebarController.initData(user,profile);
 
         Stage stage = new Stage();
         stage.setTitle("ComCop");
@@ -100,5 +91,27 @@ public class LoginController implements Initializable {
         comboBox.getItems().add("TechnicalSupport");
         comboBox.getItems().add("CostumerSupport");
         comboBox.setValue("none");
+    }
+    public static Employee employeeCreator(){
+        //Logistics Employee initialization
+        Employee logistics =new Employee("Alex Jones", null);
+
+        return logistics;
+    }
+    public Profile createProfile(Employee logistics){
+        Profile logisticsProfile= new Profile();
+        logisticsProfile.setUser(logistics);
+        // LocalDate date= LocalDate.parse("Mon Feb 05 2017");
+        //logisticsProfile.setDate(date);
+        logisticsProfile.setSalary(2000);
+        //logisticsProfile.setPosition( logistics.getDepartment().name() + " Intern");
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream("Project Code\\src\\Alex\\ProfileScreen\\image2.jpg"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        logisticsProfile.setPhoto(image);
+        return logisticsProfile;
     }
 }
