@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="50.0" style="-fx-background-color: #0F9F9F;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Omiros.HRDepartment.EmployeeStatsController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="50.0" style="-fx-background-color: #0F9F9F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Omiros.HRDepartment.EmployeeStatsController">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="90.0" prefWidth="143.0" spacing="20.0">
-               <children>
-                  <TextField alignment="CENTER" prefHeight="25.0" prefWidth="141.0" promptText="Search Employee" />
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Seach" textAlignment="CENTER" />
-               </children>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </VBox>
-            <ListView prefHeight="200.0" prefWidth="200.0" />
-            <Button contentDisplay="CENTER" mnemonicParsing="false" text="Choose Employee">
+            <ListView fx:id="employeeList" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="chooseEmployeeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#chooseEmployeeAction" text="Choose Employee">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -38,17 +32,17 @@
       </HBox>
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Submit Notes">
+            <Button fx:id="submitNotesButton" mnemonicParsing="false" onAction="#submitNotesAction" prefHeight="25.0" prefWidth="116.0" text="Submit Notes">
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
             </Button>
-            <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Keep Notes For the Employee" wrapText="true">
+            <TextArea fx:id="notesTextBox" prefHeight="200.0" prefWidth="200.0" promptText="Keep Notes For the Employee" wrapText="true">
                <HBox.margin>
                   <Insets bottom="10.0" left="25.0" />
                </HBox.margin>
             </TextArea>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="107.0" text="FILL FORM">
+            <Button fx:id="fillFromButton" mnemonicParsing="false" onAction="#fillFormAction" prefHeight="50.0" prefWidth="107.0" text="FILL FORM">
                <HBox.margin>
                   <Insets left="100.0" />
                </HBox.margin>

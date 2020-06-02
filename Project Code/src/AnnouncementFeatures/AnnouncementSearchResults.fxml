@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AnnouncementFeatures.AnnouncementSearchResultsScreenController">
+   <children>
+      <BorderPane fx:id="BorderPane" prefHeight="214.0" prefWidth="505.0">
+         <center>
+            <TableView fx:id="EntriesTable" prefHeight="200.0" prefWidth="405.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="NameColumn" prefWidth="139.0" text="Όνομα Ανακοίνωσης" />
+                <TableColumn fx:id="InfoColumn" prefWidth="204.0" text="Πληροφορίες Ανακοίνωσης" />
+                  <TableColumn fx:id="DeleteColumn" minWidth="0.0" prefWidth="61.0" text="Delete" />
+              </columns>
+            </TableView>
+         </center>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="PublishButton" mnemonicParsing="false" onAction="#goToPublicationPage" prefHeight="25.0" prefWidth="76.0" text="Publish" />
+                  <Button fx:id="EditCreationButton" mnemonicParsing="false" onAction="#goToEditCreationPage" text="Edit/Create" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -4,8 +4,8 @@ import Alex.ChatScreen.ChatScreenController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
 import Dimitra.Calendar.ArxikiCalendarController;
-import Dimitris.AnnouncementFeatures.AnnouncementSearchResultsScreenController;
-import Dimitris.ToDoListFeatures.ToDoListSearchResultsScreenController;
+import AnnouncementFeatures.AnnouncementSearchResultsScreenController;
+import ToDoListFeatures.ToDoListSearchResultsScreenController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -47,7 +47,7 @@ public class MainScreenController {
     void goToAnouncements(ActionEvent event) {
         Parent root = null;
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitris/AnnouncementFeatures/AnnouncementSearchResults.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../AnnouncementFeatures/AnnouncementSearchResults.fxml"));
             root = (Parent) fxmlLoader.load();
 
             AnnouncementSearchResultsScreenController announcementSearchResultsScreenController = fxmlLoader.getController();
@@ -64,7 +64,7 @@ public class MainScreenController {
     void goToToDoList(ActionEvent event) {
         Parent root = null;
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitris/ToDoListFeatures/ToDoListSearchResultsScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../ToDoListFeatures/ToDoListSearchResultsScreen.fxml"));
             root = (Parent) fxmlLoader.load();
 
             ToDoListSearchResultsScreenController toDoListSearchResultsScreenController = fxmlLoader.getController();

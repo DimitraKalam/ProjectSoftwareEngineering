@@ -74,7 +74,7 @@ public class LoginController implements Initializable {
 
         Stage stage = new Stage();
         stage.setTitle("ComCop");
-        stage.setScene(new Scene(root1, 850,600));
+        stage.setScene(new Scene(root1, 960,600));
         stage.show();
         Stage logInWindow = (Stage) login.getScene().getWindow();
         logInWindow.close();
@@ -87,7 +87,7 @@ public class LoginController implements Initializable {
         comboBox.getItems().add("Logistics");
         comboBox.getItems().add("TechnicalSupport");
         comboBox.getItems().add("CostumerSupport");
-        comboBox.setValue("none");
+        comboBox.getSelectionModel().select(1);
     }
 
 }
