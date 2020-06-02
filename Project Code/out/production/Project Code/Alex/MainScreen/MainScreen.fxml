@@ -10,7 +10,7 @@
       <VBox prefHeight="200.0" prefWidth="114.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="AnnouncementsButton" mnemonicParsing="false" onAction="#goToAnouncements" prefHeight="35.0" prefWidth="114.0" text="Announcements" />
-            <Button fx:id="CalendarButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="122.0" text="Calendar">
+            <Button fx:id="CalendarButton" mnemonicParsing="false" onAction="#openCalendar" prefHeight="32.0" prefWidth="122.0" text="Calendar">
                <VBox.margin>
                   <Insets />
                </VBox.margin></Button>

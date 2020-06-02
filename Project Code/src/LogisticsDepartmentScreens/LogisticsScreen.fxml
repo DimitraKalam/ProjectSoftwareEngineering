@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" prefHeight="407.0" prefWidth="433.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogisticsDepartmentScreens.LogisticsDepartmentScreenController">
+   <left>
+      <VBox prefHeight="407.0" prefWidth="117.0" style="-fx-background-color: teal;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="EconomicsButton" mnemonicParsing="false" onAction="#goToEconomics" prefHeight="25.0" prefWidth="118.0" text="Economics" />
+            <Button fx:id="PaymentsButton" mnemonicParsing="false" onAction="#goToPayments" prefHeight="25.0" prefWidth="116.0" text="Payments" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="150.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>

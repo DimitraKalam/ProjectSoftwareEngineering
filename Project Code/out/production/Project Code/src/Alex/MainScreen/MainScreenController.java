@@ -3,8 +3,9 @@ package Alex.MainScreen;
 import Alex.ChatScreen.ChatScreenController;
 import Alex.ProfileFeatures.Employee;
 import Alex.ProfileFeatures.Profile;
-import Dimitris.AnnouncementFeatures.AnnouncementSearchResultsScreenController;
-import Dimitris.ToDoListFeatures.ToDoListSearchResultsScreenController;
+import Dimitra.Calendar.ArxikiCalendarController;
+import AnnouncementFeatures.AnnouncementSearchResultsScreenController;
+import ToDoListFeatures.ToDoListSearchResultsScreenController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -38,42 +39,39 @@ public class MainScreenController {
     private static Profile profile;
 
     public static void initEmployee(Employee x, Profile y) {
-        username=x;
-        profile=y;
+        username = x;
+        profile = y;
     }
 
     @FXML
     void goToAnouncements(ActionEvent event) {
         Parent root = null;
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitris/AnnouncementFeatures/AnnouncementSearchResults.fxml"));
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../AnnouncementFeatures/AnnouncementSearchResults.fxml"));
             root = (Parent) fxmlLoader.load();
 
             AnnouncementSearchResultsScreenController announcementSearchResultsScreenController = fxmlLoader.getController();
             announcementSearchResultsScreenController.InitialiseData();
 
-        } catch (IOException ex){
+        } catch (IOException ex) {
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
         }
         BorderPaneMainScreen.setCenter(root);
     }
 
 
-
-
-
     @FXML
     void goToToDoList(ActionEvent event) {
         Parent root = null;
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitris/ToDoListFeatures/ToDoListSearchResultsScreen.fxml"));
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../ToDoListFeatures/ToDoListSearchResultsScreen.fxml"));
             root = (Parent) fxmlLoader.load();
 
             ToDoListSearchResultsScreenController toDoListSearchResultsScreenController = fxmlLoader.getController();
             //chatScreenController.initEmployee(username, profile);
 
 
-        } catch (IOException ex){
+        } catch (IOException ex) {
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
         }
         BorderPaneMainScreen.setCenter(root);
@@ -83,7 +81,7 @@ public class MainScreenController {
     @FXML
     void goToChatScreen(ActionEvent event) {
         Parent root = null;
-        try{
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatScreen/ChatScreen.fxml"));
             root = (Parent) fxmlLoader.load();
 
@@ -91,11 +89,30 @@ public class MainScreenController {
             chatScreenController.initEmployee(username, profile);
 
 
-        } catch (IOException ex){
+        } catch (IOException ex) {
             Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
         }
         BorderPaneMainScreen.setCenter(root);
     }
+
+
+    @FXML
+    void openCalendar(ActionEvent event) {
+        Parent root = null;
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitra/Calendar/ArxikiCalendarSample.fxml"));
+            root = (Parent) fxmlLoader.load();
+
+            ArxikiCalendarController arxikiCalendarController = fxmlLoader.getController();
+
+        } catch (IOException ex) {
+            Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        BorderPaneMainScreen.setCenter(root);
+    }
+
+
+
 
     public void changeScene(Parent x){
         BorderPaneMainScreen.setCenter(x);
