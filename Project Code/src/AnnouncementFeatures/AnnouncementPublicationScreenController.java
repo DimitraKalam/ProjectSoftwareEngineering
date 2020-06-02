@@ -4,7 +4,7 @@
 
 package AnnouncementFeatures;
 
-import Alex.ProfileFeatures.Employee;
+import ProfileFeatures.Employee;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,8 +15,8 @@ import javafx.scene.control.TableView;
 
 import java.util.Vector;
 
-import static Alex.ProfileFeatures.Employee.department.TechnicalSupport;
-import static Alex.ProfileFeatures.Employee.department.none;
+import static ProfileFeatures.Employee.department.TechnicalSupport;
+import static ProfileFeatures.Employee.department.none;
 
 public class AnnouncementPublicationScreenController {
 

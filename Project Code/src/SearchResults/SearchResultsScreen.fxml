@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPanee" prefHeight="396.0" prefWidth="618.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SearchResults.SearchResultsController">
+   <top>
+      <Label prefHeight="17.0" prefWidth="188.0" text="Search results" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <CardPane prefHeight="379.0" prefWidth="130.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <items>
+            <Label fx:id="User1chat" onMouseClicked="#goToChat" prefHeight="36.0" prefWidth="522.0" style="-fx-background-color: orange;" text="User 1">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem fx:id="MenuProfile" mnemonicParsing="false" onAction="#goToProfile" text="Go to profile" />
+                        <MenuItem fx:id="MenuChat" mnemonicParsing="false" onAction="#goToChat" text="Go to Chat" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Label>
+            <Label fx:id="User2chat" disable="true" onMouseClicked="#goToChat" prefHeight="35.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 2" visible="false">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Go To profile" />
+                        <MenuItem mnemonicParsing="false" text="Go to Chat" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Label>
+            <Label fx:id="User3chat" disable="true" onMouseClicked="#goToChat" prefHeight="38.0" prefWidth="521.0" style="-fx-background-color: orange;" text="User 3" visible="false">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Go to profile" />
+                        <MenuItem mnemonicParsing="false" text="Go To Chat" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Label>
+            <Label fx:id="User4chat" disable="true" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 4" visible="false">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Go to profile" />
+                        <MenuItem mnemonicParsing="false" text="Go To Chat" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Label>
+            <Label fx:id="User5chat" disable="true" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="523.0" style="-fx-background-color: orange;" text="User 5" visible="false">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Go to profile" />
+                        <MenuItem mnemonicParsing="false" text="Go To Chat" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Label>
+            <Label fx:id="User6chat" disable="true" onMouseClicked="#goToChat" prefHeight="39.0" prefWidth="524.0" style="-fx-background-color: orange;" text="User 6" visible="false">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Go to profile" />
+                        <MenuItem mnemonicParsing="false" text="Go To Chat" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Label>
+            <ScrollBar orientation="VERTICAL" prefHeight="342.0" prefWidth="14.0" />
+         </items>
+      </CardPane>
+   </left>
+</BorderPane>
