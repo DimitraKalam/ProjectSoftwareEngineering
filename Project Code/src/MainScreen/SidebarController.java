@@ -75,7 +75,7 @@ public class SidebarController {
         String  query=SearchBar.getText();
         //Δημιουργουμε ενα dummy user με ονομα το search query για τις αναγκες της εργασιας και της επιδειξης της βασικης λειτουργικοτητας
         Employee dummy = new Employee (query, Employee.department.none);
-        Profile dummyProfile=new Profile(dummy,"Project Code/src/Alex/ProfileScreen/image7.jpg",2500);
+        Profile dummyProfile=new Profile(dummy,"Project Code/src/ProfileScreen/image7.jpg",2500);
 
         dummyProfile.setPosition("Cleaning Staff");
 

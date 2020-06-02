@@ -62,7 +62,7 @@ public class LoginController implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Sidebar.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
         Employee user= new Employee("Alex Jones", null);
-        Profile profile=new Profile(user,"src\\Alex\\ProfileScreen\\image2.jpg",2000);
+        Profile profile=new Profile(user,"Project Code\\src\\ProfileScreen\\image5.jpg",2000);
         user.setDepartment(Employee.department.valueOf(dep));
         if ((user.getDepartment() != Employee.department.none)) {
             profile.setPosition(user.getDepartment().name() + " Employee");

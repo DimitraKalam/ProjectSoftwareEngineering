@@ -106,12 +106,12 @@ public class ChatScreenController {
                 profile=y;
                 username=x;
 
-                dummyprofile1=new Profile("Dummy User 1","Project Code/src/Alex/ChatScreen/image8.jpg");
-                dummyprofile2=new Profile("Dummy User 2","Project Code/src/Alex/ChatScreen/image9.jpg");
-                dummyprofile3=new Profile("Dummy User 3","Project Code/src/Alex/ChatScreen/image10.jpg");
-                dummyprofile4=new Profile("Dummy User 4","Project Code/src/Alex/ChatScreen/image11.jpg");
-                dummyprofile5=new Profile("Dummy User 5","Project Code/src/Alex/ChatScreen/image12.jpg");
-                dummyprofile6=new Profile("Dummy User 6","Project Code/src/Alex/ChatScreen/image13.jpg");
+                dummyprofile1=new Profile("Dummy User 1","Project Code/src/ChatScreen/image8.jpg");
+                dummyprofile2=new Profile("Dummy User 2","Project Code/src/ChatScreen/image9.jpg");
+                dummyprofile3=new Profile("Dummy User 3","Project Code/src/ChatScreen/image10.jpg");
+                dummyprofile4=new Profile("Dummy User 4","Project Code/src/ChatScreen/image11.jpg");
+                dummyprofile5=new Profile("Dummy User 5","Project Code/src/ChatScreen/image12.jpg");
+                dummyprofile6=new Profile("Dummy User 6","Project Code/src/ChatScreen/image13.jpg");
                 Avatar1.setImage(dummyprofile1.getPhoto());
                 Avatar2.setImage(dummyprofile2.getPhoto());
                 Avatar3.setImage(dummyprofile3.getPhoto());
