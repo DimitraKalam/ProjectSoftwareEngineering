@@ -115,9 +115,6 @@ public class ApothetirioController implements Initializable {
     FilteredList filter = new FilteredList(data, e->true);
 
 
-
-
-
     @FXML
     void search(KeyEvent event) {
 //        searchField.textProperty().addListener((observable, oldValue, newValue) -> {
