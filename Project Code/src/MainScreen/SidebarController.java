@@ -59,7 +59,7 @@ public class SidebarController {
     void openRepository(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitra/Apothetirio/ApothetirioSample.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Apothetirio/ApothetirioSample.fxml"));
             root = (Parent) fxmlLoader.load();
             ApothetirioController apothetirioController = fxmlLoader.getController();
 
@@ -150,7 +150,7 @@ public class SidebarController {
                 break;
             case HR:
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Omiros/HRDepartment/HRDepartmentSideBar.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../HRDepartment/HRDepartmentSideBar.fxml"));
                     root = (Parent) fxmlLoader.load();
                     HRDepartmentSidebarController hrDepartmentSidebarController = fxmlLoader.getController();
                 }
@@ -164,7 +164,7 @@ public class SidebarController {
                 break;
             case TechnicalSupport:
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../TechnicalSupportDepartmentEmployeeFeatures/TechnicalSupportEmployeeFeaturesScreen.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../TechnicalSupportDepartmentEmployeeFeatures/TechnicalSupportEmployeeFeaturesScreen.fxml"));
                     root = fxmlLoader.load();
                     TechnicalSupportEmployeeFeaturesScreenController technicalScreenController = fxmlLoader.getController();
 

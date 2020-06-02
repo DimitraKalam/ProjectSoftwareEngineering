@@ -47,7 +47,7 @@ public class MainScreenController {
     void goToAnouncements(ActionEvent event) {
         Parent root = null;
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../AnnouncementFeatures/AnnouncementSearchResults.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../AnnouncementFeatures/AnnouncementSearchResults.fxml"));
             root = (Parent) fxmlLoader.load();
 
             AnnouncementSearchResultsScreenController announcementSearchResultsScreenController = fxmlLoader.getController();
@@ -64,7 +64,7 @@ public class MainScreenController {
     void goToToDoList(ActionEvent event) {
         Parent root = null;
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../ToDoListFeatures/ToDoListSearchResultsScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ToDoListFeatures/ToDoListSearchResultsScreen.fxml"));
             root = (Parent) fxmlLoader.load();
 
             ToDoListSearchResultsScreenController toDoListSearchResultsScreenController = fxmlLoader.getController();
@@ -100,7 +100,7 @@ public class MainScreenController {
     void openCalendar(ActionEvent event) {
         Parent root = null;
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../Dimitra/Calendar/ArxikiCalendarSample.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Calendar/ArxikiCalendarSample.fxml"));
             root = (Parent) fxmlLoader.load();
 
             ArxikiCalendarController arxikiCalendarController = fxmlLoader.getController();
