@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="380.0" prefWidth="463.0">
+               <children>
+                  <HBox prefHeight="22.0" prefWidth="226.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="searchGuideTextBox" promptText="Search Guide" />
+                        <Button fx:id="sera" mnemonicParsing="false" text="Search" />
+                     </children>
+                  </HBox>
+                  <CheckBox fx:id="videoTick" mnemonicParsing="false" prefHeight="43.0" prefWidth="99.0" text="Video" />
+                  <CheckBox fx:id="documentTick" mnemonicParsing="false" prefHeight="43.0" prefWidth="99.0" text="Documents" />
+                  <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="15.0" top="20.0" />
+         </padding>
+      </HBox>
+   </center>
+</BorderPane>
