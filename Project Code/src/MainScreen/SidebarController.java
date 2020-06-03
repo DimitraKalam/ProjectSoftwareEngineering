@@ -176,11 +176,12 @@ public class SidebarController {
             case TechnicalSupport:
                 try{
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../TechnicalSupportDepartmentEmployeeFeatures/TechnicalSupportEmployeeFeaturesScreen.fxml"));
-                    root = fxmlLoader.load();
-                    TechnicalSupportEmployeeFeaturesScreenController technicalScreenController = fxmlLoader.getController();
+                    root = (Parent) fxmlLoader.load();
+                    TechnicalSupportEmployeeFeaturesScreenController technicalSupportEmployeeFeaturesScreenController = fxmlLoader.getController();
+                }
+                catch (IOException ex) {
+                    Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
 
-                } catch (IOException ex) {
-                    Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 borderPanee.setCenter(root);
                 break;
