@@ -59,6 +59,6 @@ public class AnnouncementEditCreationScreenController {
         AnnouncementVector.add(new Announcement( "Announcement", "Something"));
         AnnouncementVector.add(new Announcement("Ανακοίνωση για το Project", "Κείμενο"));
 
-        EntriesTable.setItems(FXCollections.observableList(AnnouncementVector));
+        EntriesTable.getItems().setAll(FXCollections.observableList(AnnouncementVector));
     }
 }
