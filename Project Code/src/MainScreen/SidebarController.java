@@ -1,5 +1,6 @@
 package MainScreen;
 
+import CustomerDepartment.CustomerSupportSideBarController;
 import LogisticsDepartmentScreens.LogisticsDepartmentScreenController;
 import ProfileFeatures.Employee;
 import ProfileFeatures.Profile;
@@ -161,6 +162,16 @@ public class SidebarController {
                 borderPanee.setCenter(root);
                 break;
             case CostumerSupport:
+                try{
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../CustomerDepartment/CustomerSupportSideBar.fxml"));
+                    root = (Parent) fxmlLoader.load();
+                    CustomerSupportSideBarController customerSupportSideBarController = fxmlLoader.getController();
+                }
+                catch (IOException ex) {
+                    Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+
+                }
+                borderPanee.setCenter(root);
                 break;
             case TechnicalSupport:
                 try{
