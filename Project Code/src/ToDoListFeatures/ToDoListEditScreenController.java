@@ -41,6 +41,6 @@ public class ToDoListEditScreenController {
         ToDoListsVector.add(new ToDoList( "List"));
         ToDoListsVector.add(new ToDoList("Λίστα για το Project"));
 
-        EntriesTable.setItems(FXCollections.observableList(ToDoListsVector));
+        EntriesTable.getItems().setAll(FXCollections.observableList(ToDoListsVector));
     }
 }
