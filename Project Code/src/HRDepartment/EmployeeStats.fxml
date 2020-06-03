@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="50.0" style="-fx-background-color: #0F9F9F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HRDepartment.EmployeeStatsController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="658.0" spacing="50.0" style="-fx-background-color: #0F9F9F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HRDepartment.EmployeeStatsController">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
          <children>
@@ -24,10 +24,8 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
          <children>
-            <ListView prefHeight="200.0" prefWidth="200.0" />
-            <Button mnemonicParsing="false" text="Inspect Details" textAlignment="CENTER" wrapText="true" />
-            <ListView prefHeight="100.0" prefWidth="161.0" />
-            <Button mnemonicParsing="false" text="Inspect Details" textAlignment="CENTER" wrapText="true" />
+            <ListView fx:id="punctualityList" prefHeight="100.0" prefWidth="310.0" />
+            <ListView fx:id="EmployeeAssessmentList" prefHeight="100.0" prefWidth="309.0" />
          </children>
       </HBox>
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">

@@ -37,7 +37,7 @@
                               <Insets left="5.0" />
                            </HBox.margin>
                            <image>
-                              <Image url="@../../img/downloadDoc.png" />
+                              <Image url="@../img/downloadDoc.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -53,7 +53,7 @@
                               <Insets left="5.0" />
                            </HBox.margin>
                            <image>
-                              <Image url="@../../img/downloadDoc.png" />
+                              <Image url="@../img/downloadDoc.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -67,14 +67,14 @@
                <children>
                   <ImageView fx:id="approveApplication" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../img/approveDocument.png" />
+                        <Image url="@../img/approveDocument.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin></ImageView>
                   <ImageView fx:id="declineApplication" fitHeight="55.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../img/refuseDocument.png" />
+                        <Image url="@../img/refuseDocument.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -84,7 +84,7 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@../../img/infoDocument.png" />
+                        <Image url="@../img/infoDocument.png" />
                      </image>
                   </ImageView>
                </children>

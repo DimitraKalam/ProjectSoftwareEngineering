@@ -55,4 +55,11 @@ public class EmployAssessmentFeatures {
         this.generalComments = generalComments;
         this.projectAssessmentGrade = projectAssessmentGrade;
     }
+
+    private static EmployAssessmentFeatures employAssessmentFeatures1 = new EmployAssessmentFeatures(120,4,0,"Some Comments...", 3.0);
+    private static EmployAssessmentFeatures employAssessmentFeatures2 = new EmployAssessmentFeatures(1443,300,10,"Some Comments...", 4.3);
+    private static EmployAssessmentFeatures employAssessmentFeatures3 = new EmployAssessmentFeatures(120,4,0,"Some Comments...", 3.0);
+
+    public static EmployAssessmentFeatures[] employAssessmentFeaturesArray = new EmployAssessmentFeatures[]{employAssessmentFeatures1, employAssessmentFeatures2,employAssessmentFeatures3};
+
 }
