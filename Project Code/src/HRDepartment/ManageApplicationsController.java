@@ -15,6 +15,7 @@ import java.util.ResourceBundle;
 
 import static HRDepartment.EvaluateRecruitmentController.randomLastmames;
 import static HRDepartment.EvaluateRecruitmentController.randomNames;
+import static HRDepartment.Notes.randomNotesArray;
 
 public class ManageApplicationsController implements Initializable {
 
@@ -51,6 +52,10 @@ public class ManageApplicationsController implements Initializable {
         int i = name.indexOf(' ');
         firstnameTextbox.setText(name.substring(0, i));
         lastnameTextbox.setText(name.substring(i));
+        Random rand = new Random();
+        int rand_int1 = rand.nextInt(4);
+
+        reviewApplicationNotes.setText(randomNotesArray[rand_int1].getText());
     }
 
     @Override
@@ -67,6 +72,5 @@ public class ManageApplicationsController implements Initializable {
             applicationList.getItems().add(name);
         }
 
-        reviewApplicationNotes.setText("Some Dummy Notes...");
     }
 }
