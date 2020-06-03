@@ -25,7 +25,6 @@ public class LoginController implements Initializable {
     private String csConnect = "CR";
     private String logisticsConnect = "LG";
     private String itConnect = "IT";
-    private String chooseDepartment;
 
 
     @FXML
