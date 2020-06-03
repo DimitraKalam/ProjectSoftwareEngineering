@@ -55,6 +55,6 @@ public class AnnouncementPublicationScreenController {
         EmployeeVector.add(new Employee( "George Papadopoulos", TechnicalSupport));
         EmployeeVector.add(new Employee("Me", none));
 
-        EntriesTable.setItems(FXCollections.observableList(EmployeeVector));
+        EntriesTable.getItems().setAll(FXCollections.observableList(EmployeeVector));
     }
 }
