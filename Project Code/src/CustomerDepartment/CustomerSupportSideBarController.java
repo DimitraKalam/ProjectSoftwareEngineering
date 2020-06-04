@@ -20,7 +20,8 @@ public class CustomerSupportSideBarController {
 
 
     @FXML
-    private BorderPane borderPanee;
+    private BorderPane bordrpane;
+
 
     @FXML
     private Button remoteControlButton;
@@ -41,7 +42,7 @@ public class CustomerSupportSideBarController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        borderPanee.setCenter(root);
+        bordrpane.setCenter(root);
     }
 
     @FXML
@@ -55,7 +56,7 @@ public class CustomerSupportSideBarController {
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        borderPanee.setCenter(root);
+        bordrpane.setCenter(root);
     }
 
 
@@ -66,12 +67,12 @@ public class CustomerSupportSideBarController {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CustomerSupportShowComplaints.fxml"));
             root = fxmlLoader.load();
-            CustomerSupportSideBarController customerSupportSideBarController = fxmlLoader.getController();
+            CustomerSupportShowComplainsController customerSupportShowComplainsController = fxmlLoader.getController();
 
         } catch (IOException ex) {
             Logger.getLogger(ToDoListCompositionScreenController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        borderPanee.setCenter(root);
+        bordrpane.setCenter(root);
     }
 
 }
