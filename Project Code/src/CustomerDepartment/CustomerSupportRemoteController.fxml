@@ -2,21 +2,21 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0F9F9F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerDepartment.CustomerSupportRemoteControllController">
    <center>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <ListView fx:id="clientList" prefHeight="200.0" prefWidth="194.0">
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
                <HBox.margin>
                   <Insets left="5.0" />
                </HBox.margin>
@@ -43,6 +43,20 @@
                   <Button fx:id="newClientButton" mnemonicParsing="false" onAction="#newClientAction" prefHeight="76.0" prefWidth="100.0" text="New Client" />
                </children>
             </VBox>
+            <AnchorPane prefHeight="360.0" prefWidth="87.0">
+               <children>
+                  <Label fx:id="connectLabel" layoutX="10.0" layoutY="25.0" text="Connecting..." textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.0" layoutY="224.0" prefHeight="136.0" prefWidth="112.0" text="Add ID and Password to create new Customer." textAlignment="CENTER" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
          </children>
          <padding>
             <Insets bottom="20.0" left="1.0" top="20.0" />

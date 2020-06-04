@@ -1,5 +1,7 @@
 package CustomerDepartment;
 
+import javafx.scene.control.ComboBox;
+
 public class Complain {
 
     private String name;
@@ -35,5 +37,8 @@ public class Complain {
         this.category = category;
         this.uniqueCode = uniqueCode;
     }
+
+    public static Complain complain1 = new Complain("Complain Name ", "Category", "fa342-3423ed");
+    public static Complain complain2 = new Complain("Not enough space on 342-dccs components ", "Dummy Category", "fa342-3423ed");
 
 }
