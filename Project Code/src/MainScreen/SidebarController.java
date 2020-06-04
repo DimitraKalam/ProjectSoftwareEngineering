@@ -60,7 +60,7 @@ public class SidebarController {
     void openRepository(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Apothetirio/ApothetirioSample.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Apothetirio/ApothetirioSample.fxml"));
             root = (Parent) fxmlLoader.load();
             ApothetirioController apothetirioController = fxmlLoader.getController();
 
@@ -85,7 +85,7 @@ public class SidebarController {
 
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../SearchResults/SearchResultsScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/SearchResults/SearchResultsScreen.fxml"));
             root = (Parent) fxmlLoader.load();
             SearchResultsController searchResultsController = fxmlLoader.getController();
             searchResultsController.initSearchResults(username,profile,dummy,dummyProfile);
@@ -121,7 +121,7 @@ public class SidebarController {
     void goToMyProfile(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ProfileScreen/ProfileScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ProfileScreen/ProfileScreen.fxml"));
             root = (Parent) fxmlLoader.load();
             ProfileScreenController profileScreenController = fxmlLoader.getController();
             profileScreenController.initEmployeeFromMyProfile(username,profile);
@@ -139,7 +139,7 @@ public class SidebarController {
             case Logistics:
                 root = null;
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../LogisticsDepartmentScreens/LogisticsScreen.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/LogisticsDepartmentScreens/LogisticsScreen.fxml"));
                     root = (Parent) fxmlLoader.load();
                     LogisticsDepartmentScreenController logisticsDepartmentScreenController = fxmlLoader.getController();
                     logisticsDepartmentScreenController.setVariables(username,profile);}
@@ -151,7 +151,7 @@ public class SidebarController {
                 break;
             case HR:
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../HRDepartment/HRDepartmentSideBar.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/HRDepartment/HRDepartmentSideBar.fxml"));
                     root = (Parent) fxmlLoader.load();
                     HRDepartmentSidebarController hrDepartmentSidebarController = fxmlLoader.getController();
                 }
@@ -163,7 +163,7 @@ public class SidebarController {
                 break;
             case CostumerSupport:
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../CustomerDepartment/CustomerSupportSideBar.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/CustomerDepartment/CustomerSupportSideBar.fxml"));
                     root = (Parent) fxmlLoader.load();
                     CustomerSupportSideBarController customerSupportSideBarController = fxmlLoader.getController();
                 }
@@ -175,7 +175,7 @@ public class SidebarController {
                 break;
             case TechnicalSupport:
                 try{
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../TechnicalSupportDepartmentEmployeeFeatures/TechnicalSupportEmployeeFeaturesScreen.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/TechnicalSupportDepartmentEmployeeFeatures/TechnicalSupportEmployeeFeaturesScreen.fxml"));
                     root = (Parent) fxmlLoader.load();
                     TechnicalSupportEmployeeFeaturesScreenController technicalSupportEmployeeFeaturesScreenController = fxmlLoader.getController();
                 }

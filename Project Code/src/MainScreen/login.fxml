@@ -33,7 +33,7 @@
       <Label fx:id="logInFail" layoutX="587.0" layoutY="378.0" text="FAIL LOGIN IN" textFill="#d31e33" visible="false" />
       <ImageView fitHeight="60.0" fitWidth="94.0" layoutX="382.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../img/User.png" />
+            <Image url="@../img/User.png" />
          </image></ImageView>
       <Label layoutX="359.0" layoutY="27.0" prefHeight="53.0" prefWidth="156.0" text="ComCop" textAlignment="CENTER" textFill="#f2f1dc">
          <font>

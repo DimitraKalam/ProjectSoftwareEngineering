@@ -64,7 +64,7 @@ public class SearchResultsController {
     public void goToChat(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ChatScreen/MessageScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ChatScreen/MessageScreen.fxml"));
             root = (Parent) fxmlLoader.load();
             MessageScreenController messageScreenController = fxmlLoader.getController();
             List<Profile> dummyChat =new ArrayList<>();
@@ -85,7 +85,7 @@ public class SearchResultsController {
     public void goToProfile(ActionEvent event) {
         Parent root = null;
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../ProfileScreen/ProfileScreen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ProfileScreen/ProfileScreen.fxml"));
             root = (Parent) fxmlLoader.load();
             ProfileScreenController profileScreenController = fxmlLoader.getController();
             profileScreenController.initEmployeeFromProfile(username,profile,dummy,dummyProfile);
