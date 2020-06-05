@@ -61,6 +61,9 @@ public class PersonalCalendarController implements Initializable {
         calendarView.setBackground(new Background(new BackgroundFill(Paint.valueOf(selectedColor.toString()), CornerRadii.EMPTY, Insets.EMPTY)));
     }
 
+    void getDay() {
+
+    }
     @FXML
     private Label textfeb25;
 
